@@ -14,6 +14,7 @@ import { toast } from 'react-toastify';
 
 //import styles 👇
 import 'react-modern-drawer/dist/index.css'
+import Arrow from '../../../Icons/Arrow';
 
 
 
@@ -32,13 +33,13 @@ const Container = styled.div`
 
 `
 const DrawerContainer = styled.div`
-    width:85%;
+    width:90%;
     min-height: 100vh;
     margin: 0 auto; //
     gap: 1vh;
-    background-color: lightblue;
     display: flex; // гибкий контейнер
     flex-direction: column;
+    gap: 5vh;
     justify-content: flex-start; //выравнивание по центру
     align-items: flex-start; // выравнивание по вертикали по центру
 
@@ -113,6 +114,14 @@ const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
     color: ${props => props.theme.body};
+    align-self: flex-start;
+    width: 80%;
+    margin: 0 auto;
+`
+const Title1 = styled.h2`
+    font-size: 1.5vw;//{//props => props.theme.fontxxl}
+    text-transform: capitalize;
+    color: black;
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
@@ -233,6 +242,19 @@ const InputName = styled.input`
     &:hover{
         transform: scale(1.05);
     }
+`
+
+const DrawerBox = styled.div`
+    height: 15vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+    textTitle{
+        color: #DD6B20;
+        font-size: ${props=>props.theme.fontxl};
+    }
+
 `
 
 
@@ -369,15 +391,15 @@ function ButtonInterface() {
             </SubText>
             <InputContainer>
                 <Input onChange={(e) => setAddress(e.target.value)} placeholder='Input Addres' />
-                    <NumericInput step={0.01} precision={3} min={0} max={100} style={{
-                        input: {
-                            width: '10vw',
-                            height: '4vh',
-                            fontSize: '1vw',
-                            backgroundColor: 'white',
-                            border: '0px',
-                        }
-                    }} onChange={(e) => setNumber(Number(e))} />
+                <NumericInput step={0.01} precision={3} min={0} max={100} style={{
+                    input: {
+                        width: '10vw',
+                        height: '4vh',
+                        fontSize: '1vw',
+                        backgroundColor: 'white',
+                        border: '0px',
+                    }
+                }} onChange={(e) => setNumber(Number(e))} />
             </InputContainer>
 
             <InputName onChange={(e) => setName(e.target.value)} placeholder='Give a Name to Address(Optional)' />
@@ -403,18 +425,21 @@ function ButtonInterface() {
                 >
                     <div>
                         <DrawerContainer>
-                            <Title>
+                            <Title1>
                                 You want to distribute: {sum() / divider} SUI
-                            </Title>
+                            </Title1>
                             {Object.keys(addressMap).map(u =>
-                                <Container>
-                                    <Title>
-                                        {u}
-                                    </Title>
-                                    <Title py='2'>
+                                <DrawerBox>
+                                    <textTitle>
+                                        Transaction
+                                    </textTitle>
+                                    <p>
                                         {addressMap[u] / divider} SUI {namesMap[u] != '' ? "to " + namesMap[u] : ''}
-                                    </Title>
-                                </Container>
+                                    </p>
+                                    <p>
+                                        {u}
+                                    </p>
+                                </DrawerBox>
                             )}
                         </DrawerContainer>
                     </div>

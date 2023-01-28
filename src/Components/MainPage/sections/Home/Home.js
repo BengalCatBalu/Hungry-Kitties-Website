@@ -6,8 +6,10 @@ import picture1 from './../../../../assets/logo.png'
 import picture2 from './../../../../assets/ToolsAssets/nftText.png'
 
 const Section = styled.section`
-min-height: ${props => `calc(100vh - ${props.theme.navHeight})`};
+min-height: ${props => `calc(100vh - ${props.theme.navHeight}) - 5vh`};
 width:100vw;
+margin-top: 5vh;
+
 position: relative;
 background-color:${props => props.theme.body};
 `

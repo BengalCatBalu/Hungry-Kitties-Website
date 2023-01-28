@@ -42,6 +42,15 @@ const Box = styled.div`
     justify-content: center;
     align-items: center;
 `
+const Box1 = styled.div`
+    margin-top: -12vh;
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
 
 const ImageContainer = styled.div`
     width: 100%;
@@ -122,13 +131,12 @@ function Objects() {
                         <Button text = {"Send Object"}/>
                     </ButtonContainer>
                 </Box>
-                <Box>
+                <Box1>
                     <ImageContainer>
                         <img src={picture} alt='nftText' />
                     </ImageContainer>
-                    {<ShowObjects/>
-                    }
-                </Box>
+                    <ShowObjects/>
+                </Box1>
             </Container>
         </Section>
     );
