@@ -131,7 +131,7 @@ const Navigation = () => {
                             </ControlledMenu>
                         </BigMenuItem1>
                         <BigMenuItem1><a href='/roadmap'><Btn>
-                                    Whitepaper
+                                    Roadmap
                             </Btn></a></BigMenuItem1>
                         <BigMenuItem1><a href='/tools' ref={ref1} className="btn" onPointerEnter={() => setOpen1(true)}> <Btn>
                                     Tools
