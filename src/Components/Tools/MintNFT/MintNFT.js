@@ -112,7 +112,7 @@ const MainTitle = styled.h1`
 function MintNFT() {
     return (
         <>
-        <Section>
+        <Section id = "mintnft">
             <Container>
                 <Box>
                     <Title>

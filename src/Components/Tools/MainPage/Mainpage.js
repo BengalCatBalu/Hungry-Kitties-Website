@@ -159,7 +159,7 @@ function ToolsHome() {
         }
     }
     return (
-        <Section>
+        <Section id = "tools-mainpage" >
             <Container>
                 <Box1>
                     <Title>

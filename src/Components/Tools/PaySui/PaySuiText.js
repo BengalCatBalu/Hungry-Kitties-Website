@@ -76,7 +76,7 @@ const SubTextLight = styled.p`
 
 function PaySuiText() {
     return (
-        <Section>
+        <Section id = "paysui">
             <Container>
                 <Box>
                     <ImageContainer>

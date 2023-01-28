@@ -109,7 +109,7 @@ const Btn = styled.button`
 
 function Github() {
     return (
-        <Section>
+        <Section id = "tools-github">
             <Container>
                 <Box>
                     <Title>

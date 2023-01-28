@@ -158,9 +158,10 @@ const Navigation = () => {
                                 offsetY={display1 === 'arrow'
                                     ? 15 : 0}
                             >
-                                <MenuItem1>New File</MenuItem1>
-                                <MenuItem1>Save</MenuItem1>
-                                <MenuItem1>Close Window</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("mintnft")}> Mint Our NFT </MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("paysui")}>Pay Sui</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("objects")}> Objects</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("tools-github")}> Check our Github</MenuItem1>
                             </ControlledMenu></BigMenuItem1>
                     </Menu1>
                     <ConnectButton />

@@ -110,7 +110,7 @@ const Input = styled.input`
 
 function Objects() {
     return (
-        <Section>
+        <Section id = "objects">
             <Container>
                 <Box>
                     <Title>
