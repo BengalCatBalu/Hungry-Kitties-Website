@@ -141,7 +141,7 @@ function ShowObjects() {
                 open={isOpen}
                 onClose={toggleDrawer}
                 direction='right'
-                size={680}
+                size={"45vw"}
                 className='bla bla bla'
                 lockBackgroundScroll = {true}
             >
