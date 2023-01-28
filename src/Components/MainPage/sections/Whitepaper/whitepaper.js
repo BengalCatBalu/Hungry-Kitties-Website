@@ -112,7 +112,7 @@ const Btn = styled.button`
 `
 function Whitepaper() {
     return (
-        <Section>
+        <Section id = "whitepaper">
             <MainTitle>
                 Whitepaper
             </MainTitle>

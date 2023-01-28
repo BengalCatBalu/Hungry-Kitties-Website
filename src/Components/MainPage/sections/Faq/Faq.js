@@ -69,7 +69,7 @@ function Faq() {
     }, [] )
     */
     return (
-        <Section>
+        <Section id = "FAQ">
             <Title>
                 FAQ
             </Title>

@@ -65,7 +65,7 @@ const MainTitle = styled.h1`
 
 function Team() {
     return (
-        <Section>
+        <Section id = "team">
             <MainTitle>
                 Team
             </MainTitle>

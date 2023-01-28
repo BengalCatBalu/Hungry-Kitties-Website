@@ -89,7 +89,7 @@ const MainTitle = styled.h1`
 
 function Shelters() {
     return (
-        <Section>
+        <Section id = "shelters">
             <MainTitle>
                 Shelters
             </MainTitle>

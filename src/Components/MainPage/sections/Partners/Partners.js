@@ -37,7 +37,7 @@ const MainTitle = styled.h1`
 
 function Partners() {
     return (
-        <Section>
+        <Section id = "partners">
             <MainTitle>
                 Partners
             </MainTitle>

@@ -82,7 +82,7 @@ const MainTitle = styled.h1`
 
 function About() {
     return (
-        <Section>
+        <Section id = "about">
             <MainTitle>
                 About
             </MainTitle>

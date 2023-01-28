@@ -113,7 +113,7 @@ const Btn = styled.button`
 
 function ToolsPage() {
     return (
-        <Section>
+        <Section id = "tools">
             <MainTitle>
                 Tools
             </MainTitle>

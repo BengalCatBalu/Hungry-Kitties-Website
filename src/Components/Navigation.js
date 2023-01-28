@@ -106,6 +106,15 @@ const Navigation = () => {
         wallet.disconnect();
     }
 
+    const scrollTo  =(id) => {
+        let element = document.getElementById(id);
+        element.scrollIntoView({
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest',
+        })
+    }
+
     return (
         <>
             <Section>
@@ -125,9 +134,13 @@ const Navigation = () => {
                                 offsetY={display === 'arrow'
                                     ? 15 : 0}
                             >
-                                <MenuItem1>New File</MenuItem1>
-                                <MenuItem1>Save</MenuItem1>
-                                <MenuItem1>Close Window</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("about")}>About</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("shelters")}>Shelters</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("whitepaper")}>Whitepaper</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("tools")}>Tools</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("team")}>Team</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("partners")}>Partners</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("FAQ")}>FAQ</MenuItem1>
                             </ControlledMenu>
                         </BigMenuItem1>
                         <BigMenuItem1><a href='/roadmap'><Btn>
@@ -151,7 +164,6 @@ const Navigation = () => {
                             </ControlledMenu></BigMenuItem1>
                     </Menu1>
                     <ConnectButton />
-                    <Button text = "Disconnect" funct={Disconnect}/>
                 </NavBar>
             </Section>
         </>
