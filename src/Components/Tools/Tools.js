@@ -8,6 +8,7 @@ import PaySui from './PaySui/PaySui';
 import Objects from './Objects/Objects';
 import ToolsHome from './MainPage/Mainpage';
 import Github from './Github/Github';
+import GenerateNft from './GenerateNft/GenerateNft';
 
 
 
@@ -20,6 +21,7 @@ function Tools() {
             <ToastContainer autoClose={1000}/>
             <PaySui/>
             <Objects/>
+            <GenerateNft/>
             <Github/>
         </div>
     );

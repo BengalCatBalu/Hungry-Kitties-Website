@@ -161,6 +161,7 @@ const Navigation = () => {
                                 <MenuItem1 onClick={() => scrollTo("mintnft")}> Mint Our NFT </MenuItem1>
                                 <MenuItem1 onClick={() => scrollTo("paysui")}>Pay Sui</MenuItem1>
                                 <MenuItem1 onClick={() => scrollTo("objects")}> Objects</MenuItem1>
+                                <MenuItem1 onClick={() => scrollTo("GenerateNFT")}> Generate NFT</MenuItem1>
                                 <MenuItem1 onClick={() => scrollTo("tools-github")}> Check our Github</MenuItem1>
                             </ControlledMenu></BigMenuItem1>
                     </Menu1>
