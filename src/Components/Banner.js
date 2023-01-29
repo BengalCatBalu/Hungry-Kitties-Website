@@ -4,8 +4,8 @@ import logo from './../assets/ToolsAssets/tuz.png'
 import Button from './Button';
 
 const Section = styled.section`
-    width:90vw;
-    margin-left: 5vw;
+    width:85vw;
+    margin-left: 7.5vw;
     border-radius: 40px;
     height:50vh;
     position: relative;
@@ -17,6 +17,9 @@ const Section = styled.section`
     align-items: center;
 
     overflow: hidden;
+    @media (max-width: 64em) {
+        height: 25vh;
+    }
 
 `
 const ButtonContainer = styled.div`
@@ -41,6 +44,10 @@ const ImgContainer = styled.div`
     img{
         width: 30vw;
         height: auto;
+        @media (max-width: 64em) {
+            height: 25vh;
+            width: auto;
+        }
     }
 `
 
@@ -50,6 +57,9 @@ const Title = styled.h1`
     padding: 1rem 2rem;
     z-index: 10;
     width: 35%;
+    @media (max-width: 64em) {
+        font-size: 3vw;
+    }
 `
 const Btn = styled.button`
     display: inline-block;
@@ -71,6 +81,9 @@ const Btn = styled.button`
 
     &:hover{
         transform: scale(0.9);
+    }
+    @media (max-width: 64em) {
+        font-size: 2vw;
     }
 `
 

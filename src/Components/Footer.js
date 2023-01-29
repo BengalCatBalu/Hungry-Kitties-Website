@@ -22,13 +22,16 @@ const Section = styled.div`
 `
 
 const Container = styled.div`
-    width:90vw;
+    width:85vw;
     height: 25vh;
     margin: 2rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid ${props=>props.theme.text};
+    @media (max-width: 64em) {
+        gap:5vw;
+    }
 `
 
 const Left = styled.div`
@@ -59,6 +62,7 @@ const MenuItems = styled.ul`
 const Item = styled.li`
     width: fit-content;
     cursor: pointer;
+    font-size: 1vw;
 
     &::after{
         content:' ';
@@ -71,6 +75,10 @@ const Item = styled.li`
     
     &:hover::after{
         width:100%;
+    }
+
+    @media (max-width: 64em) {
+        font-size: 2vw;
     }
 
 `
@@ -88,18 +96,19 @@ const Bottom = styled.div`
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    font-size: 1vw;
     align-items: center;
 
 `
 const Btn = styled.button`
-    display: inline-block;
+    display: flex;
     background-color: ${props => props.theme.text};
     color: ${props => props => props.theme.body};
     outline: none;
     border: none;
     white-space: nowrap;
     font-size: ${props => props.theme.fontlg};
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     padding: 0.9rem 2.5rem;
     border-radius: 50px;
@@ -111,6 +120,11 @@ const Btn = styled.button`
 
     &:hover{
         transform: scale(0.9);
+    }
+
+    @media (max-width: 64em) {
+        max-width: 5vw;
+        font-size: 2vw;
     }
 `
 

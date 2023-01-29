@@ -11,15 +11,23 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;
     position: relative;
+    @media (max-width: 64em) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 const Row = styled.div`
-    width: 90vw;
+    width: 100vw;
     height: 40vh;
     white-space: nowrap;
     box-sizing: content-box;
     margin: 2rem 0;
     display: flex;
+    @media (max-width: 64em) {
+        flex-direction: column;
+    }
 `
 
 const MainTitle = styled.h1`
@@ -37,23 +45,23 @@ const MainTitle = styled.h1`
 
 function Partners() {
     return (
+        <>
         <Section id = "partners">
-            <MainTitle>
+        <MainTitle>
                 Partners
-            </MainTitle>
+        </MainTitle>
             <Row>
-                <PartnerCard/>
                 <PartnerCard/>
                 <PartnerCard/>
                 <PartnerCard/>
             </Row>
             <Row>
-            <PartnerCard/>
                 <PartnerCard/>
                 <PartnerCard/>
                 <PartnerCard/>
             </Row>
         </Section>
+        </>
     );
 }
 

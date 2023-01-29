@@ -14,7 +14,7 @@ position: relative;
 background-color:${props => props.theme.body};
 `
 const Container = styled.div`
-    width:90%;
+    width:85%;
     min-height: 60vh;
     margin: 0vw auto; //
     background-color: ${props=>props.theme.body};
@@ -23,45 +23,40 @@ const Container = styled.div`
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
 
+    @media (max-width: 64em) {
+        width: 85%;
+    }
+    @media (max-width: 48em) {
+        width: 85%;
+        flex-direction: column-reverse;
+    }
+
 `
 
 const Box = styled.div`
     width:50%;
-    height:100%;
+    height:80vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: visible;
+    @media (max-width: 70em) {
+        height: 30vh;
+        &>*:first-child{
+            margin-top: 20vh;
+        }
+    }
+
 `
 const Box1 = styled.div`
     width:50%;
-    height:100%;
-    margin-top: -20vh;
+    height:50vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-`
-const rotate = keyframes`
-    100%{
-        transform: rotate(1turn);
-    }
+    //align-items: flex-end;
 `
 
-const Round = styled.div`
-    position: absolute;
-    bottom: 2rem;
-    right: 90%;
-    width: 7rem;
-    height: 7rem;
-
-    img{
-        width: 100%;
-        height: auto;
-        animation: ${rotate} 6s linear infinite reverse;
-    }
-`
 
 const VideoContainer = styled.div`
     width:100%;

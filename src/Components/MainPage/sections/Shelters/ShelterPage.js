@@ -45,6 +45,18 @@ const Container = styled.div`
         align-items: center;
     }
 
+    @media (max-width: 64em) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        &>*:last-child{
+            width: 80%;
+            margin-top: -10vh ;
+        }
+    }
+
 `
 
 const Box = styled.div`
@@ -71,6 +83,10 @@ const Box = styled.div`
         height: auto;
         border-radius: 40px;
     }
+    @media (max-width: 64em) {
+        margin-top: -12vh;
+        height: 50vh;
+    }
 
 `
 
@@ -81,6 +97,11 @@ const Title = styled.h2`
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
+    @media (max-width: 64em) {
+        font-size: 5vw;
+        align-self: center;
+        text-align: center;
+    }
 `
 
 const SubText = styled.p`
@@ -92,6 +113,11 @@ const SubText = styled.p`
     margin: 1rem auto;
     font-weight: 400;
     white-space: pre-line;
+    @media (max-width: 64em) {
+        font-size: 3vw;
+        align-self: center;
+        text-align: center;
+    }
 `
 
 const SubTextLight = styled.p`
@@ -102,6 +128,11 @@ const SubTextLight = styled.p`
     width: 80%;
     margin: 1rem auto;
     font-weight: 400;
+    @media (max-width: 64em) {
+        font-size: 3vw;
+        align-self: center;
+        text-align: center;
+    }
 `
 
 function ShelterPage(text, link) {

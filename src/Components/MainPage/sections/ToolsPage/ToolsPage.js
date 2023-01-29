@@ -18,14 +18,19 @@ const Section = styled.section`
 `
 
 const Container = styled.div`
-    width:90%;
+    width:85%;
     min-height: 80vh;
     margin: 0 auto; //
     background-color: black;
     display: flex; // гибкий контейнер
+    gap: 5vw;
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
     border-radius: 40px;
+    @media (max-width: 64em) {
+        flex-direction: column;
+        align-items: center;
+    }
 
 `
 
@@ -40,6 +45,10 @@ const Box = styled.div`
         width: 70%;
         height: auto;
     }
+    @media (max-width: 64em) {
+        margin-top: -5vh;
+    }
+    
 `
 
 const Title = styled.h2`
@@ -49,6 +58,11 @@ const Title = styled.h2`
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
+    @media (max-width: 64em) {
+        font-size: 5vw;
+        align-self: center;
+        text-align: center;
+    }
 `
 
 const SubText = styled.p`
@@ -60,6 +74,11 @@ const SubText = styled.p`
     margin: 1rem auto;
     font-weight: 400;
     white-space: pre-line;
+    @media (max-width: 64em) {
+        font-size: 3vw;
+        align-self: center;
+        text-align: center;
+    }
 `
 
 const SubTextLight = styled.p`
@@ -70,6 +89,11 @@ const SubTextLight = styled.p`
     width: 80%;
     margin: 1rem auto;
     font-weight: 400;
+    @media (max-width: 64em) {
+        font-size: 3vw;
+        align-self: center;
+        text-align: center;
+    }
 `
 
 const MainTitle = styled.h1`
@@ -109,6 +133,11 @@ const Btn = styled.button`
     &:hover{
         transform: scale(0.9);
     }
+    @media (max-width: 64em) {
+        font-size: 3vw;
+        align-self: center;
+        text-align: center;
+    }
 `
 
 function ToolsPage() {
@@ -128,7 +157,7 @@ function ToolsPage() {
                     </SubText>
                     <Btn>
                         <a href = "">
-                            Out Tools
+                            Our Tools
                         </a>
                     </Btn>
                 </Box>

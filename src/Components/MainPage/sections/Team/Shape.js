@@ -26,6 +26,12 @@ const Title = styled.h2`
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
+    @media (max-width: 64em) {
+        font-size: 4vw;
+        align-self: center;
+        text-align: center;
+        color: black;
+    }
 `
 
 const SubText = styled.p`
@@ -36,6 +42,12 @@ const SubText = styled.p`
     width: 80%;
     margin: 0rem auto;
     font-weight: 400;
+    @media (max-width: 64em) {
+        font-size: 2vw;
+        align-self: center;
+        text-align: center;
+        color: black;
+    }
 `
 
 
@@ -46,8 +58,7 @@ function Shape() {
                 Text
             </Title>
             <SubText>
-                Our team is very coolsdfjsdjkfsdjhfjsdhf
-                kjsdhfjksdhjfkhjsdhfjhdskjfh{'\n'}jsd<bv/>hfjhsdfjhsdkhfsdhj{'\n'}ksdfsdf
+                Our team is very cool
                 <bv/>
             </SubText>
         </Item>

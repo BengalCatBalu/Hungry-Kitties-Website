@@ -24,6 +24,12 @@ const Container = styled.div`
     width: 100%;
     height:100%;
 
+    @media (max-width: 64em) {
+        height: 40vh;
+        width: 60vw;
+        justify-content: center;
+    }
+
 
     .swiper{
         width: 80%;
@@ -37,11 +43,17 @@ const Container = styled.div`
     }
     
     .swiper-button-next{
-        color:${props => props.theme.text}
+        color:white;
+        @media (max-width: 64em) {
+        display: none;
+    }
     }
 
     .swiper-button-prev{
-        color:${props => props.theme.text}
+        color:white;
+        @media (max-width: 64em) {
+        display: none;
+    }
     }
 
     img{
@@ -57,17 +69,17 @@ function Carousel() {
     return (
         <Container>
             <Swiper
-                autoplay = {{
-                    delay:3000,
-                    disableOnInteraction:false
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false
                 }}
 
-                pagination = {{
-                    type:'fraction',
+                pagination={{
+                    type: 'fraction',
 
                 }}
-                scrollbar = {{
-                    draggable:true
+                scrollbar={{
+                    draggable: true
                 }}
                 grabCursor={true}
                 navigation={true}

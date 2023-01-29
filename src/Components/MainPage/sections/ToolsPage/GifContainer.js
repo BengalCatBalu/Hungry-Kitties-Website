@@ -1,15 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import logo from './../../../../assets/Home Video.mp4'
+import logo from './../../../../assets/tools.mp4'
 
 const GifContaineer = styled.div`
     width:100%;
+    border-radius: 50px;
 
     video{
-        width:100%;
+        margin-left: 5vw;
+        width:90%;
         height:70vh;
         border-radius: 50px;
+    }
+    @media (max-width: 64em) {
+        height: 50vh;
+        display: flex;
+        align-items: center;
     }
 `
 

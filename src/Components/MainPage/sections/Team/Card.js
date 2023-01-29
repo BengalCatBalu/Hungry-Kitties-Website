@@ -18,6 +18,11 @@ const Item = styled.div`
 
     border: 0px solid ${props => props.theme.text};
     border-radius: 20px;
+    @media (max-width: 64em) {
+        width: 40vw;
+        height: 30vh;
+        margin: 0;
+    }
 `
 const ImageContainer = styled.div`
     width: 13vw;
@@ -29,6 +34,11 @@ const ImageContainer = styled.div`
     transition: all 0.5s ease;
     overflow: hidden;
     border: 2px solid white;
+    @media (max-width: 64em) {
+        width: 40vw;
+        height: 30vh;
+        margin: 0;
+    }
 
     :hover img{
         //transform: scale(1.25);
@@ -38,7 +48,7 @@ const ImageContainer = styled.div`
     }
     img{
         width:100%;
-        height: 100%;
+        height: auto;
         border-radius: 20px;
         transition: all 0.5s ease;
     }
@@ -76,6 +86,12 @@ const Name = styled.h2`
     text-transform: uppercase;
     color: white;
     margin: 1rem;
+    @media (max-width: 64em) {
+        font-size: 4vw;
+        align-self: center;
+        text-align: center;
+        color: black;
+    }
 `
 const Position = styled.h2`
     font-size: ${props => props.theme.fontmd};
@@ -87,6 +103,12 @@ const Position = styled.h2`
     opacity: 0.8;
     margin: 1rem;
     font-weight: 400;
+    @media (max-width: 64em) {
+        font-size: 3vw;
+        align-self: center;
+        text-align: center;
+        color: black;
+    }
 `
 
 

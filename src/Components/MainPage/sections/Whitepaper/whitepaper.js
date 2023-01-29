@@ -18,7 +18,7 @@ const Section = styled.section`
 `
 
 const Container = styled.div`
-    width:90%;
+    width:85%;
     min-height: 80vh;
     margin: 0 auto; //
     background-color: black;
@@ -26,7 +26,10 @@ const Container = styled.div`
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
     border-radius: 40px;
-
+    @media (max-width: 64em) {
+        flex-direction: column;
+        gap:5vh
+    }
 `
 
 const Box = styled.div`
@@ -49,6 +52,11 @@ const Title = styled.h2`
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
+    @media (max-width: 64em) {
+        font-size: 5vw;
+        align-self: center;
+        text-align: center;
+    }
 `
 
 const SubText = styled.p`
@@ -60,6 +68,11 @@ const SubText = styled.p`
     margin: 1rem auto;
     font-weight: 400;
     white-space: pre-line;
+    @media (max-width: 64em) {
+        font-size: 3vw;
+        align-self: center;
+        text-align: center;
+    }
 `
 
 const SubTextLight = styled.p`
@@ -70,6 +83,11 @@ const SubTextLight = styled.p`
     width: 80%;
     margin: 1rem auto;
     font-weight: 400;
+    @media (max-width: 64em) {
+        font-size: 3vw;
+        align-self: center;
+        text-align: center;
+    }
 `
 
 const MainTitle = styled.h1`
@@ -108,6 +126,11 @@ const Btn = styled.button`
 
     &:hover{
         transform: scale(0.9);
+    }
+    @media (max-width: 64em) {
+        font-size: 3vw;
+        align-self: center;
+        text-align: center;
     }
 `
 function Whitepaper() {

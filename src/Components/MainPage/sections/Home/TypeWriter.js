@@ -10,6 +10,11 @@ const Title = styled.h2`
     width:80%;
     color: ${props => props.theme.text};
     align-self: flex-start;
+    @media (max-width: 70em) {
+        margin-top: 1vh;
+        align-self: center;
+        text-align: center;
+    }
 
 `
 
@@ -33,6 +38,17 @@ const Title1 = styled.h2`
         color: #3182CE;
         font-size: ${props => props.theme.fontxl};
     }
+
+    @media (max-width: 70em) {
+        margin-top: 1vh;
+        align-self: center;
+        text-align: center;
+    }
+    @media (max-width: 48em) {
+        margin-top: 1vh;
+        align-self: center;
+        text-align: center;
+    }
 `
 const SubTitle = styled.h3`
     font: ${props => props.theme.fontlg};
@@ -45,6 +61,18 @@ const SubTitle = styled.h3`
 
     .sui{
         color: #3182CE;
+    }
+    @media (max-width: 70em) {
+        font-size: ${props => props.theme.fontlg};
+        margin-top: 1vh;
+        align-self: center;
+        text-align: center;
+    }
+    @media (max-width: 48em) {
+        font-size: ${props => props.theme.fontlg};
+        margin-top: 1vh;
+        align-self: center;
+        text-align: center;
     }
 `
 

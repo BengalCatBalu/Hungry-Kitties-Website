@@ -27,7 +27,7 @@ justify-content: center;
 align-items: center;
 `
 const Container = styled.div`
-    width:90%;
+    width:85%;
     min-height: 80vh;
     margin: 0 auto; //
     border-radius: 40px;

@@ -36,6 +36,9 @@ const Container = styled.div`
     align-items: center; // выравнивание по вертикали по центру
     border-radius: 40px;
     flex-wrap: wrap;
+    @media (max-width: 64em) {
+        margin-top: -2vh;
+    }
 
 `
 const RowContainer = styled.div`
@@ -46,6 +49,12 @@ const RowContainer = styled.div`
     align-items: center; // выравнивание по вертикали по центру
     border-radius: 40px;
     flex-wrap: wrap;
+    @media (max-width: 64em) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10vh;
+        margin-top: 10vh;
+    }
 
 `
 

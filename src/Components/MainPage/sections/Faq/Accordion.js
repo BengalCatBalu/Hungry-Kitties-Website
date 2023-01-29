@@ -12,6 +12,9 @@ const Container = styled.div`
     border: 0px solid black;
     margin: 3rem 3rem;
     color: black;
+    @media (max-width: 64em) {
+        border-radius: 10px;
+    }
 `
 
 const Title = styled.div`
@@ -21,6 +24,11 @@ const Title = styled.div`
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
+    @media (max-width: 64em) {
+        align-self: center;
+        text-align: center;
+        font-size: 1.5vw;
+    }
 `
 
 const Reveal = styled.div`

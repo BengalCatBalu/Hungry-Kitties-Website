@@ -29,7 +29,7 @@ const Title = styled.h1`
 `
 
 const Container = styled.div`
-    width:90%;
+    width:85%;
     background-color: black;
     border-radius: 50px;
     margin: 2rem auto;

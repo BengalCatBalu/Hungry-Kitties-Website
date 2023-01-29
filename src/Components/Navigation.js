@@ -12,13 +12,17 @@ import Home from './MainPage/sections/Home/Home';
 
 
 const Section = styled.section`
-    width:95vw;
-    margin-left: 2.5vw;
+    width:90vw;
+    margin-left: 5vw;
     margin-top: 2vh;
     background-color: #DD6B20;
     overflow: visible;
     justify-self: center;
     border-radius: 40px;
+    @media (max-width: 64em) {
+        /*1024px*/
+       background-color: white;
+    }
 `
 
 const NavBar = styled.nav`
@@ -32,8 +36,16 @@ const NavBar = styled.nav`
         width: 8rem;
         height: 8rem;
         margin-left: -5.5vw;
+        transition: all 0.5s ease;
+        @media (max-width: 64em) {
+        /*1024px*/
+            width: 20vw;
+            height: 20vw;
+        }
     }
-
+    img:hover{
+        transform: scale(1.1);
+    }
 `;
 
 const Menu1 = styled.ul`
@@ -41,6 +53,27 @@ const Menu1 = styled.ul`
     justify-content:space-between;
     align-items:center;
     list-style: none;
+
+    @media (max-width: 64em) {
+        /*1024px*/
+        position: fixed;
+        top: ${props=>props.theme.navHeight};
+        left:0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: ${props=> `calc(100vh - ${props.theme.navHeight})`};
+        z-index: 50;
+        background-color: rgba(255,255,255, 0.85);
+        display: flex;
+        backdrop-filter: blur(2px);
+        gap:20vh;
+
+        transform: ${props=>props.click ? 'translateY(0)': 'translateY(100%)'};
+        transition: all 0.3s ease;
+        flex-direction: column;
+        justify-content: center;
+    }
 `
 
 const MenuItem1 = styled.li`
@@ -93,7 +126,60 @@ const Btn = styled.button`
     }
 `
 
+const HamburgerMenu = styled.span`
+    width: ${props=>props.click?"1.5rem":"1.5rem"};
+    height: 2px;
+    background: black;
+
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    transform: ${props=>props.click?'translateX(-50%) rotate(90deg)':'translateX(-50%) rotate(0deg)'};
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    @media (max-width: 64em) {
+        /*1024px*/
+        display: flex;
+    }
+    
+    &::after, &::before{
+        content: ' ';
+        width: ${props=>props.click?"1rem":"1.5rem"};
+        height: 2px;
+        right: ${props=>props.click?"-2px":"0"};
+        background: black;
+        position: absolute;
+        transition: all 0.3s ease;
+
+    }
+
+    &::after{
+        top:${props=>props.click?"0.3rem":"0.5rem"};
+        transform: ${props=>props.click?'rotate(-40deg)':'rotate(0deg)'};
+    }
+    &::before{
+        bottom:${props=>props.click?"0.3rem":"0.5rem"};
+        transform: ${props=>props.click?'rotate(40deg)':'rotate(0deg)'};
+    }
+`
+
+const BtnContainer = styled.div`
+    display: flex;
+
+    @media (max-width: 64em) {
+        /*1024px*/
+        display: none;
+    }
+`
+
 const Navigation = () => {
+
+    const [click, setClick] = useState(false);
 
     const ref = useRef(null);
     const [isOpen, setOpen] = useState();
@@ -113,14 +199,21 @@ const Navigation = () => {
             block: 'start',
             inline: 'nearest',
         })
+        setClick(!click);
     }
 
     return (
         <>
             <Section>
+
                 <NavBar>
-                    <img src={logo} alt="logo" />
-                    <Menu1>
+                    <a href = "/">
+                        <img src={logo} alt="logo"/>
+                    </a>
+                    <HamburgerMenu click = {click} onClick = {() => setClick(!click)}>
+                        &nbsp;
+                    </HamburgerMenu>
+                    <Menu1 click = {click}>
                         <BigMenuItem1>
                             <a href='/' ref={ref} className="btn" onPointerEnter={() => setOpen(true)}> <Btn>
                                     Home
@@ -165,7 +258,9 @@ const Navigation = () => {
                                 <MenuItem1 onClick={() => scrollTo("tools-github")}> Check our Github</MenuItem1>
                             </ControlledMenu></BigMenuItem1>
                     </Menu1>
-                    <ConnectButton />
+                    <BtnContainer>
+                        <ConnectButton />
+                    </BtnContainer>
                 </NavBar>
             </Section>
         </>
