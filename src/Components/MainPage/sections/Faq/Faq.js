@@ -1,8 +1,6 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Accordion from './Accordion';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const Section = styled.div`
     min-height: 100vh;
