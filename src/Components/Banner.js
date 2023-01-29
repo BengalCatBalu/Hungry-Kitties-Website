@@ -19,6 +19,9 @@ const Section = styled.section`
     overflow: hidden;
     @media (max-width: 64em) {
         height: 25vh;
+        width: 100%;
+        border-radius: 0px;
+        margin-left: 0vw;
     }
 
 `

@@ -11,6 +11,11 @@ const Section = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media (max-width: 64em) {
+        min-height: 0vh;
+        background-color: black;
+        height: 60vh;
+    }
 `
 
 const Title = styled.h1`
@@ -23,6 +28,10 @@ const Title = styled.h1`
     margin: 1rem auto;
     border-bottom: 2px solid ${props => props.theme.body};
     width: fit-content;
+    @media (max-width: 64em) {
+       color:#DD6B20;
+       border: 0px;
+    }
 
 `
 

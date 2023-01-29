@@ -131,6 +131,11 @@ const SubTextLight = styled.p`
 
 const ButtonContainer = styled.div`
     margin-left: -25vh;
+    @media (max-width: 64em) {
+        border-radius: 0;
+        width: 90%;
+        margin-left: 40vw;
+    }
 `
 
 function ShelterPage({ text, title, links, toSite }) {

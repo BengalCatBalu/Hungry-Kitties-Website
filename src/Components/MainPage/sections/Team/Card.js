@@ -38,6 +38,7 @@ const ImageContainer = styled.div`
         width: 40vw;
         height: 30vh;
         margin: 0;
+        border: 0px solid #DD6B20;
     }
 
     :hover img{
@@ -90,7 +91,7 @@ const Name = styled.h2`
         font-size: 4vw;
         align-self: center;
         text-align: center;
-        color: black;
+        color: #DD6B20;
     }
 `
 const Position = styled.h2`
@@ -107,7 +108,7 @@ const Position = styled.h2`
         font-size: 3vw;
         align-self: center;
         text-align: center;
-        color: black;
+        color: #DD6B20;
     }
 `
 

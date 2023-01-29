@@ -25,6 +25,9 @@ const Btn = styled.button`
     &:hover{
         transform: scale(0.9);
     }
+    @media (max-width: 64em) {
+        font-size: 2vw;
+    }
 `
 
 function Button({text, link, funct}) {

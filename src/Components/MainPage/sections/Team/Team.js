@@ -25,6 +25,10 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media (max-width: 64em) {
+        background-color: black;
+    }
 `
 
 const Container = styled.div`
@@ -38,6 +42,20 @@ const Container = styled.div`
     flex-wrap: wrap;
     @media (max-width: 64em) {
         margin-top: -2vh;
+        background-color: black;
+    }
+    .swiper-button-next{
+        color:black;
+        @media (max-width: 64em) {
+            color: #DD6B20;
+        }
+    }
+
+    .swiper-button-prev{
+        color:black;
+        @media (max-width: 64em) {
+            color: #DD6B20;
+        }
     }
 
 `

@@ -42,6 +42,7 @@ const Box = styled.div`
     align-items: center;
     @media (max-width: 70em) {
         height: 30vh;
+        width: 70vw;
         &>*:first-child{
             margin-top: 20vh;
         }

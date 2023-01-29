@@ -28,7 +28,8 @@ const Item = styled.div`
     name{
         font-size: 1.5vw;
         @media (max-width: 64em) {
-       font-size: 2vw;
+            font-size: 2vw;
+            color: white;
     }
     }
     @media (max-width: 64em) {

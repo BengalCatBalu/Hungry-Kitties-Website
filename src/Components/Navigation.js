@@ -61,14 +61,14 @@ const Menu1 = styled.ul`
         top: ${props => props.theme.navHeight};
         left:0;
         right: 0;
-        bottom: 0;
+        bottom: 0%;
         width: 100vw;
         height: ${props => `calc(100vh - ${props.theme.navHeight})`};
         z-index: 50;
         background-color: rgba(255,255,255, 0.85);
         display: flex;
         backdrop-filter: blur(2px);
-        gap:20vh;
+        gap:5vh;
 
         transform: ${props => props.click ? 'translateY(0)' : 'translateY(100%)'};
         transition: all 0.3s ease;
@@ -125,6 +125,12 @@ const Btn = styled.button`
     &:hover{
         transform: scale(0.9);
     }
+
+    @media (max-width: 64em) {
+        /*1024px*/
+        font-size: 4vw;
+    }
+    
 `
 
 const HamburgerMenu = styled.span`
@@ -133,12 +139,12 @@ const HamburgerMenu = styled.span`
     background: black;
 
     position: absolute;
-    top: 2.5rem;
-    left: 50%;
+    top: 3.5rem;
+    left: 90%;
     transform: ${props => props.click ? 'translateX(-50%) rotate(90deg)' : 'translateX(-50%) rotate(0deg)'};
     display: none;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
 
     cursor: pointer;
     transition: all 0.3s ease;

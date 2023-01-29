@@ -12,9 +12,12 @@ const Section = styled.section`
     align-items: center;
     position: relative;
     @media (max-width: 64em) {
+        min-height: 0vh;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        background-color: black;
+        height: 80vh;
     }
 `
 
@@ -40,6 +43,9 @@ const MainTitle = styled.h1`
     margin: 1rem auto;
     border-bottom: 2px solid ${props => props.theme.body};
     width: fit-content;
+        @media (max-width: 64em) {
+            display: none;
+        }
 
 `
 

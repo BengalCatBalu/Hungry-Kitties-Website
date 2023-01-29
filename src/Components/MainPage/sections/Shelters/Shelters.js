@@ -25,6 +25,11 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+@media (max-width: 64em) {
+        border-radius: 0;
+        width: 100%;
+        background-color: black;
+    }
 `
 const Container = styled.div`
     width:85%;
@@ -63,6 +68,10 @@ const Container = styled.div`
         height: auto;
         border-radius: 20px;
     }
+    @media (max-width: 64em) {
+        border-radius: 0;
+        width: 100%;
+    }
 
 `
 
@@ -84,6 +93,11 @@ const MainTitle = styled.h1`
     margin: 1rem auto;
     border-bottom: 0px solid ${props => props.theme.text};
     width: fit-content;
+
+    @media (max-width: 64em) {
+        font-size: 5vw;
+        color:#DD6B20;
+    }
 
 `
 

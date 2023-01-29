@@ -14,6 +14,8 @@ const Container = styled.div`
     color: black;
     @media (max-width: 64em) {
         border-radius: 10px;
+        width: 30vw;
+        margin: 5vh auto;
     }
 `
 

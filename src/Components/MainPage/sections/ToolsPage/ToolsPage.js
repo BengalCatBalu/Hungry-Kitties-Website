@@ -15,6 +15,9 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;
     position: relative;
+    @media (max-width: 64em) {
+        background-color: black;
+    }
 `
 
 const Container = styled.div`
@@ -107,6 +110,10 @@ const MainTitle = styled.h1`
     margin: 1rem auto;
     border-bottom: 0px solid ${props => props.theme.body};
     width: fit-content;
+    @media (max-width: 64em) {
+        font-size: 5vw;
+        color:#DD6B20;
+    }
 
 `
 
