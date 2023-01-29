@@ -306,10 +306,10 @@ function GenerateNft() {
                                         Bengal Cat
                                     </RadioButton>
                                     <RadioButton pointColor = "#DD6B20" value="2">
-                                        Gray Cat
+                                        White Cat
                                     </RadioButton>
                                     <RadioButton pointColor = "#DD6B20" value="3">
-                                        Brown Cat
+                                        Beige Cat
                                     </RadioButton>
                                 </RadioGroup>
                             </STabPanel>

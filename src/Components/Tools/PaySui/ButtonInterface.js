@@ -113,7 +113,7 @@ const InputContainer = styled.div`
 const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
-    color: ${props => props.theme.body};
+    color: #DD6B20;
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
@@ -153,17 +153,13 @@ const Input = styled.input`
     margin-left: 0%;
 
     font-size: 1vw;
-    padding: 0.9rem 3.5rem;
+    padding: 0.9rem 1.5rem;
     border-radius: 10px;
     cursor:pointer;
     position: relative;
 
     transition: all 0.2s ease;
 
-
-    &:hover{
-        transform: scale(1.05);
-    }
 `
 
 const Btn1 = styled.button`
@@ -188,7 +184,7 @@ const Btn1 = styled.button`
 
 
     &:hover{
-        transform: scale(1.05);
+        transform: scale(0.95);
     }
 `
 
@@ -213,7 +209,7 @@ const Btn2 = styled.button`
 
 
     &:hover{
-        transform: scale(1.05);
+        transform: scale(0.95);
     }
 `
 
@@ -230,7 +226,7 @@ const InputName = styled.input`
     border-color: black;
 
     font-size: 1vw;
-    padding: 0.9rem 2rem;
+    padding: 0.9rem 1.5rem;
     border-radius: 10px;
     cursor:pointer;
     position: relative;
@@ -238,10 +234,6 @@ const InputName = styled.input`
 
     transition: all 0.2s ease;
 
-
-    &:hover{
-        transform: scale(1.05);
-    }
 `
 
 const DrawerBox = styled.div`

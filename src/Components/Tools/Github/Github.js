@@ -57,7 +57,7 @@ const ImageContainer = styled.div`
 const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
-    color: ${props => props.theme.body};
+    color: #DD6B20;
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
@@ -66,7 +66,7 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: 1.5vw;
     text-transform: none;
-    color: #DD6B20;
+    color: white;
     align-self: flex-start;
     width: 80%;
     margin: 1rem auto;
@@ -76,7 +76,7 @@ const SubText = styled.p`
 const SubText1 = styled.p`
     font-size: 1.5vw;
     text-transform: none;
-    color: #DD6B20;
+    color: white;
     align-self: flex-start;
     width: 80%;
     margin: 3rem auto;
@@ -87,8 +87,8 @@ const SubText1 = styled.p`
 
 const Btn = styled.button`
     display: inline-block;
-    background-color: white;
-    color: black;
+    background-color: #DD6B20;
+    color: white;
     outline: none;
     border: none;
     white-space: nowrap;

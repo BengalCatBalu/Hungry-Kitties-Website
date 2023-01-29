@@ -41,6 +41,7 @@ const Box = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3vh;
     img{
         width: 70%;
         height: auto;
@@ -152,9 +153,6 @@ function ToolsPage() {
                     <Title>
                         Try our Tools
                     </Title>
-                    <SubText>
-                        Our Tools is very cool
-                    </SubText>
                     <Btn>
                         <a href = "">
                             Our Tools

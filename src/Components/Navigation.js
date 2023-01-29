@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import { Menu, MenuItem, ControlledMenu } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import { ConnectButton, useWallet } from '@suiet/wallet-kit';
+import { useHistory, useLocation, useParams } from "react-router";
 //import './../Styles/suiet-wallet-kit-custom.css'
 
 import logo from './../assets/logo.png'
@@ -57,19 +58,19 @@ const Menu1 = styled.ul`
     @media (max-width: 64em) {
         /*1024px*/
         position: fixed;
-        top: ${props=>props.theme.navHeight};
+        top: ${props => props.theme.navHeight};
         left:0;
         right: 0;
         bottom: 0;
         width: 100vw;
-        height: ${props=> `calc(100vh - ${props.theme.navHeight})`};
+        height: ${props => `calc(100vh - ${props.theme.navHeight})`};
         z-index: 50;
         background-color: rgba(255,255,255, 0.85);
         display: flex;
         backdrop-filter: blur(2px);
         gap:20vh;
 
-        transform: ${props=>props.click ? 'translateY(0)': 'translateY(100%)'};
+        transform: ${props => props.click ? 'translateY(0)' : 'translateY(100%)'};
         transition: all 0.3s ease;
         flex-direction: column;
         justify-content: center;
@@ -127,14 +128,14 @@ const Btn = styled.button`
 `
 
 const HamburgerMenu = styled.span`
-    width: ${props=>props.click?"1.5rem":"1.5rem"};
+    width: ${props => props.click ? "1.5rem" : "1.5rem"};
     height: 2px;
     background: black;
 
     position: absolute;
     top: 2.5rem;
     left: 50%;
-    transform: ${props=>props.click?'translateX(-50%) rotate(90deg)':'translateX(-50%) rotate(0deg)'};
+    transform: ${props => props.click ? 'translateX(-50%) rotate(90deg)' : 'translateX(-50%) rotate(0deg)'};
     display: none;
     justify-content: center;
     align-items: center;
@@ -149,9 +150,9 @@ const HamburgerMenu = styled.span`
     
     &::after, &::before{
         content: ' ';
-        width: ${props=>props.click?"1rem":"1.5rem"};
+        width: ${props => props.click ? "1rem" : "1.5rem"};
         height: 2px;
-        right: ${props=>props.click?"-2px":"0"};
+        right: ${props => props.click ? "-2px" : "0"};
         background: black;
         position: absolute;
         transition: all 0.3s ease;
@@ -159,12 +160,12 @@ const HamburgerMenu = styled.span`
     }
 
     &::after{
-        top:${props=>props.click?"0.3rem":"0.5rem"};
-        transform: ${props=>props.click?'rotate(-40deg)':'rotate(0deg)'};
+        top:${props => props.click ? "0.3rem" : "0.5rem"};
+        transform: ${props => props.click ? 'rotate(-40deg)' : 'rotate(0deg)'};
     }
     &::before{
-        bottom:${props=>props.click?"0.3rem":"0.5rem"};
-        transform: ${props=>props.click?'rotate(40deg)':'rotate(0deg)'};
+        bottom:${props => props.click ? "0.3rem" : "0.5rem"};
+        transform: ${props => props.click ? 'rotate(40deg)' : 'rotate(0deg)'};
     }
 `
 
@@ -192,10 +193,12 @@ const Navigation = () => {
         wallet.disconnect();
     }
 
-    const scrollTo  =(id) => {
+    const location = useLocation('');
+
+    const scrollTo = (id) => {
         let element = document.getElementById(id);
         element.scrollIntoView({
-            behavior: 'smooth', 
+            behavior: 'smooth',
             block: 'start',
             inline: 'nearest',
         })
@@ -207,17 +210,22 @@ const Navigation = () => {
             <Section>
 
                 <NavBar>
-                    <a href = "/">
-                        <img src={logo} alt="logo"/>
+                    <a href="/">
+                        <img src={logo} alt="logo" />
                     </a>
-                    <HamburgerMenu click = {click} onClick = {() => setClick(!click)}>
+                    <HamburgerMenu click={click} onClick={() => setClick(!click)}>
                         &nbsp;
                     </HamburgerMenu>
-                    <Menu1 click = {click}>
+                    <Menu1 click={click}>
                         <BigMenuItem1>
-                            <a href='/' ref={ref} className="btn" onPointerEnter={() => setOpen(true)}> <Btn>
+                            <a href='/' ref={ref} className="btn" onPointerEnter={() => {
+                                if (!location.pathname.includes('tools')) {
+                                    setOpen(true)
+                                }
+                            }
+                            }> <Btn>
                                     Home
-                            </Btn> </a>
+                                </Btn> </a>
                             <ControlledMenu
                                 state={isOpen ? 'open' : 'closed'}
                                 anchorRef={ref}
@@ -237,10 +245,17 @@ const Navigation = () => {
                             </ControlledMenu>
                         </BigMenuItem1>
                         <BigMenuItem1><a href='/roadmap'><Btn>
-                                    Roadmap
-                            </Btn></a></BigMenuItem1>
-                        <BigMenuItem1><a href='/tools' ref={ref1} className="btn" onPointerEnter={() => setOpen1(true)}> <Btn>
-                                    Tools
+                            Roadmap
+                        </Btn></a></BigMenuItem1>
+                        <BigMenuItem1><a href='/roadmap'><Btn>
+                            Whitepaper
+                        </Btn></a></BigMenuItem1>
+                        <BigMenuItem1><a href='/tools' ref={ref1} className="btn" onPointerEnter={() => {
+                            if (location.pathname.includes('tools')) {
+                                setOpen1(true)
+                            }
+                        }}> <Btn>
+                                Tools
                             </Btn> </a>
                             <ControlledMenu
                                 state={isOpen1 ? 'open' : 'closed'}

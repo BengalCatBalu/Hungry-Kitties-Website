@@ -31,7 +31,7 @@ const Container = styled.div`
     min-height: 80vh;
     margin: 0 auto; //
     border-radius: 40px;
-    background-color: #DD6B20;
+    background-color: black;
     display: flex; // гибкий контейнер
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
@@ -51,11 +51,11 @@ const Container = styled.div`
     }
     
     .swiper-button-next{
-        color:${props => props.theme.text}
+        color:#DD6B20
     }
 
     .swiper-button-prev{
-        color:${props => props.theme.text}
+        color:#DD6B20
     }
 
     img{
@@ -103,16 +103,28 @@ function Shelters() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <ShelterPage text = {"Text"} link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmfYMkCjh2K4abaqP9UyjbyxA3RtfF4VSgwV8rtYWHFqjL"/>
+                        <ShelterPage title = {"Edinburgh Dog and Cat Home"} text = {"This is a small but very good shelter from Scotland, founded in 1884. For 140 years, this shelter has been helping many cats and dogs.«Here at Edinburgh Dog and Cat Home, we strive to make sure that every pet has the loving home it deserves. And we get our claws into our cause.»"} links = {[
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/7.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/2.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/3.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/4.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/5.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/6.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/1.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/8.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/9.png",
+                        ]}/>
                     </SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 5</SwiperSlide>
-                    <SwiperSlide>Slide 6</SwiperSlide>
-                    <SwiperSlide>Slide 7</SwiperSlide>
-                    <SwiperSlide>Slide 8</SwiperSlide>
-                    <SwiperSlide>Slide 9</SwiperSlide>
+                    <SwiperSlide>
+                        <ShelterPage title = {"Heaven on Earth"} text = {"The shelter was founded in 2000 in Los Angeles, which has a large number of assistance programs for cats and kittens.Heaven on Earth has come a long way in its 20 years as an organization, and the team continues to change and grow."} links = {[
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/1.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/2.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/3.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/4.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/5.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/6.png",
+                        ]}/>
+                    </SwiperSlide>
                 </Swiper>
             </Container>
         </Section>

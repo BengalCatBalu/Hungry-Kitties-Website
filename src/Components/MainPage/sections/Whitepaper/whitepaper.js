@@ -28,6 +28,8 @@ const Container = styled.div`
     border-radius: 40px;
     @media (max-width: 64em) {
         flex-direction: column;
+        width: 100%;
+        border-radius: 0px;
         gap:5vh
     }
 `
@@ -37,6 +39,7 @@ const Box = styled.div`
     height:100%;
     display:flex;
     flex-direction: column;
+    gap: 3vh;
     justify-content: center;
     align-items: center;
     img{
@@ -147,9 +150,6 @@ function Whitepaper() {
                     <Title>
                         You can read our Whitepaper
                     </Title>
-                    <SubText>
-                        Our whitepaper is very cool.
-                    </SubText>
                     <Btn>
                         <a href = "">
                             Go to Whitepaper

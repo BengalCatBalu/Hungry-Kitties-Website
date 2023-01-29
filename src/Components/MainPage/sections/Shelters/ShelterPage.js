@@ -2,13 +2,6 @@ import React from 'react';
 import { useRef, useState } from "react";
 import logo from './../../../../assets/ToolsAssets/dinoFree.png'
 
-import ph1 from './../../../../assets/Shelters/Edinburg/edinburg1.png'
-import ph2 from './../../../../assets/Shelters/Edinburg/edinburg2.png'
-import ph3 from './../../../../assets/Shelters/Edinburg/edinburg3.png'
-import ph4 from './../../../../assets/Shelters/Edinburg/edinburg4.png'
-import ph5 from './../../../../assets/Shelters/Edinburg/edinburg5.png'
-import ph6 from './../../../../assets/Shelters/Edinburg/edinburg6.png'
-
 
 
 
@@ -56,7 +49,6 @@ const Container = styled.div`
             margin-top: -10vh ;
         }
     }
-
 `
 
 const Box = styled.div`
@@ -86,6 +78,7 @@ const Box = styled.div`
     @media (max-width: 64em) {
         margin-top: -12vh;
         height: 50vh;
+        width: 90%;
     }
 
 `
@@ -93,7 +86,7 @@ const Box = styled.div`
 const Title = styled.h2`
     font-size: ${props => props.theme.fontxxl};
     text-transform: capitalize;
-    color: ${props => props.theme.body};
+    color: #DD6B20;
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
@@ -107,7 +100,7 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: ${props => props.theme.fontlg};
     text-transform: none;
-    color: ${props => props.theme.body};
+    color: white;
     align-self: flex-start;
     width: 80%;
     margin: 1rem auto;
@@ -135,7 +128,7 @@ const SubTextLight = styled.p`
     }
 `
 
-function ShelterPage(text, link) {
+function ShelterPage({ text, title, links }) {
     return (
         <Container>
             <Box>
@@ -149,20 +142,17 @@ function ShelterPage(text, link) {
                     modules={[Pagination, Autoplay]}
                     className="mySwiper"
                 >
-                    <SwiperSlide><img src={ph1} alt="logo" /></SwiperSlide>
-                    <SwiperSlide><img src={ph2} alt="logo" /></SwiperSlide>
-                    <SwiperSlide><img src={ph3} alt="logo" /></SwiperSlide>
-                    <SwiperSlide><img src={ph4} alt="logo" /></SwiperSlide>
-                    <SwiperSlide><img src={ph5} alt="logo" /></SwiperSlide>
-                    <SwiperSlide><img src={ph6} alt="logo" /></SwiperSlide>
+                    {Object.keys(links).map(element =>
+                        <SwiperSlide><img src={links[element]} alt="logo" /></SwiperSlide>
+                    )}
                 </Swiper>
             </Box>
             <Box>
                 <Title>
-                    Edinburgh Dog and Cat Home
+                    {title}
                 </Title>
                 <SubText>
-                    Here at Edinburgh Dog and Cat Home, we strive to make sure that every pet has the loving home it deserves. And we get our claws into our cause.
+                    {text}
                 </SubText>
             </Box>
         </Container>

@@ -25,8 +25,8 @@ const Container = styled.div`
     height:100%;
 
     @media (max-width: 64em) {
-        height: 40vh;
-        width: 60vw;
+        height: 30vh;
+        width: 70vw;
         justify-content: center;
     }
 
@@ -43,14 +43,14 @@ const Container = styled.div`
     }
     
     .swiper-button-next{
-        color:white;
+        color:#DD6B20;
         @media (max-width: 64em) {
         display: none;
     }
     }
 
     .swiper-button-prev{
-        color:white;
+        color:#DD6B20;
         @media (max-width: 64em) {
         display: none;
     }

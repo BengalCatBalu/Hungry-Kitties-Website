@@ -21,7 +21,7 @@ const Container = styled.div`
     min-height: 90vh;
     border-radius: 50px;
     margin: 0 auto; //
-    background-color: #DD6B20;
+    background-color: black;
     display: flex; // гибкий контейнер
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
@@ -44,7 +44,7 @@ const Box = styled.div`
 `
 const Box1 = styled.div`
     margin-top: -12vh;
-    width:50%;
+    width:44%;
     height:100%;
     display:flex;
     flex-direction: column;
@@ -64,15 +64,15 @@ const ImageContainer = styled.div`
 const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
-    color: ${props => props.theme.body};
+    color: #DD6B20;
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
 `
 
 const SubText = styled.p`
-    font-size: 1.5vw;
-    text-transform: lowercase;
+    font-size: 1.25vw;
+    text-transform: none;
     color: ${props => props.theme.body};
     align-self: flex-start;
     width: 80%;
@@ -102,10 +102,6 @@ const Input = styled.input`
 
     transition: all 0.2s ease;
 
-
-    &:hover{
-        transform: scale(1.05);
-    }
 `
 
 function Objects() {
@@ -118,11 +114,11 @@ function Objects() {
                     </Title>
                     <SubText>
                     It is important for us that you understand that every object in SUI is NFT. Therefore, each object has its own unique object ID.
-                    {'\n'}
+                    {'\n\n'}
                     Even each individual SUI token in an implementation is non-fungible. This approach is found only in the move programming language, on which sui smart contracts are built.
-                    {'\n'}
+                    {'\n\n'}
                     You can see all the objects that belong to your wallet and better understand how the Sui blockchain works from this side. To do this, use the interface on the right.
-                    {'\n'}
+                    {'\n\n'}
                     And if you want to send the object to another address, then use the interface below. (P.S you can translate absolutely any object)
                     </SubText>
                     <Input placeholder='Input Object ID' />

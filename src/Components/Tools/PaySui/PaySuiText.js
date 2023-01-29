@@ -46,7 +46,7 @@ const ImageContainer = styled.div`
 const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
-    color: black;
+    color: #DD6B20;
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;

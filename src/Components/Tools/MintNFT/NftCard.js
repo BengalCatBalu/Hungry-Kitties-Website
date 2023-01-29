@@ -94,9 +94,6 @@ const Input = styled.input`
     transition: all 0.2s ease;
 
 
-    &:hover{
-        transform: scale(1.05);
-    }
 `
 
 function NftCard({ name, text, link }) {

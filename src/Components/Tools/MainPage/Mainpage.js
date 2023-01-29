@@ -67,7 +67,7 @@ const VideoContainer = styled.div`
 const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
-    color: ${props => props.theme.body};
+    color: #DD6B20;
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
@@ -75,7 +75,7 @@ const Title = styled.h2`
 
 const SubText = styled.p`
     font-size: 1.5vw;
-    text-transform: lowercase;
+    text-transform: none;
     color: ${props => props.theme.body};
     align-self: flex-start;
     width: 80%;
@@ -166,12 +166,7 @@ function ToolsHome() {
                         Our Tools
                     </Title>
                     <SubText>
-                        With this feature, we would like to introduce {'\n'}you to our collection a little.
-                        Each nft obtained in this way has three fields:{'\n'}ajshdjsahdjaskdhasd
-                        Name -  Kittie{'\n'}asjdkashjdhjkasdhjkas
-                        Image - Link to image{'\n'}asdjkasjkdhasjkd
-                        sadmnasbdjhashjdhjasdjhasgjjsadhsahdjk
-                        sadjashdjashjkdkhjashjdskhdjhjksadhjasdj
+                    This section of the site is made to demonstrate and tell you about the capabilities of the Sui and the Move language.{'\n\n'}We believe in the future of {'\n'} Sui, and we hope that there will be {'\n'} more and more new projects on this blockchain, now we want to show {'\n'}the basic functions of this blockchain.
                     </SubText>
                     <ButtonContainer>
                         <Btn onClick={faucetSui}>

@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const Btn = styled.button`
     display: inline-block;
-    background-color: black;
+    background-color: #DD6B20;
     color: ${props => props => props.theme.body};
     outline: none;
     border: none;
