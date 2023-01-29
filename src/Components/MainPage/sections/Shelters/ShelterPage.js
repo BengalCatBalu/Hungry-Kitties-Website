@@ -18,6 +18,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
+import Button from '../../../Button';
 
 const Container = styled.div`
     width:90%;
@@ -128,7 +129,11 @@ const SubTextLight = styled.p`
     }
 `
 
-function ShelterPage({ text, title, links }) {
+const ButtonContainer = styled.div`
+    margin-left: -25vh;
+`
+
+function ShelterPage({ text, title, links, toSite }) {
     return (
         <Container>
             <Box>
@@ -154,6 +159,9 @@ function ShelterPage({ text, title, links }) {
                 <SubText>
                     {text}
                 </SubText>
+                <ButtonContainer>
+                    <Button text={"Go To Site"} link = {toSite}/>   
+                </ButtonContainer>
             </Box>
         </Container>
     );

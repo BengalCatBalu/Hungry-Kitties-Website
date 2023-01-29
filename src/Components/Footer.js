@@ -11,7 +11,7 @@ import logo from './../assets/logo.png'
 
 
 const Section = styled.div`
-    min-height: 100vh;
+    min-height: 70vh;
     min-width: 100vw;
     background-color: ${props => props.theme.body};
     position: relative;

@@ -113,7 +113,7 @@ function Shelters() {
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/1.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/8.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/9.png",
-                        ]}/>
+                        ]} toSite = {"https://edch.org.uk/"}/>
                     </SwiperSlide>
                     <SwiperSlide>
                         <ShelterPage title = {"Heaven on Earth"} text = {"The shelter was founded in 2000 in Los Angeles, which has a large number of assistance programs for cats and kittens.Heaven on Earth has come a long way in its 20 years as an organization, and the team continues to change and grow."} links = {[
@@ -123,7 +123,7 @@ function Shelters() {
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/4.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/5.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/6.png",
-                        ]}/>
+                        ]} toSite = {"https://heavenlypets.org/"}/>
                     </SwiperSlide>
                 </Swiper>
             </Container>
