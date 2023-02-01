@@ -45,7 +45,7 @@ const ImgContainer = styled.div`
     opacity: 0.2;
 
     img{
-        width: 30vw;
+        width: 25vw;
         height: auto;
         @media (max-width: 64em) {
             height: 25vh;
@@ -56,7 +56,7 @@ const ImgContainer = styled.div`
 
 const Title = styled.h1`
     font-size: ${props=>props.theme.fontxxl};
-    color: ${props=>props.theme.body};
+    color: ${props=>props.theme.white};
     padding: 1rem 2rem;
     z-index: 10;
     width: 35%;
@@ -66,12 +66,12 @@ const Title = styled.h1`
 `
 const Btn = styled.button`
     display: inline-block;
-    background-color: ${props => props.theme.text};
-    color: ${props => props => props.theme.body};
+    background-color: ${props => props.theme.white};
+    color: ${props => props => props.theme.black};
     outline: none;
     border: none;
     white-space: nowrap;
-    font-size: ${props => props.theme.fontlg};
+    font-size: ${props => props.theme.fontxl};
     justify-items: center;
     align-items: center;
     padding: 0.9rem 2.5rem;
@@ -94,12 +94,12 @@ function Banner() {
     return (
         <Section>
             <ImgContainer>
-                <img src = {logo} alt = "The Hungry Kitties"/>
-                <img src = {logo} alt = "The Hungry Kitties"/>
-                <img src = {logo} alt = "The Hungry Kitties"/>
-                <img src = {logo} alt = "The Hungry Kitties"/>
-                <img src = {logo} alt = "The Hungry Kitties"/>
-                <img src = {logo} alt = "The Hungry Kitties"/>
+                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5133.PNG"} alt = "The Hungry Kitties"/>
+                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5132.PNG"} alt = "The Hungry Kitties"/>
+                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5124.PNG"} alt = "The Hungry Kitties"/>
+                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5133.PNG"} alt = "The Hungry Kitties"/>
+                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5127.PNG"} alt = "The Hungry Kitties"/>
+                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5123.PNG"} alt = "The Hungry Kitties"/>
             </ImgContainer>
             <Title>
                 Join the <br/> Hungry Kitties Club 

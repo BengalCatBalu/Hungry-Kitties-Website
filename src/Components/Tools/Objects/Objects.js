@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import picture from './../../../assets/ToolsAssets/img3.png'
+import { useWallet } from "@suiet/wallet-kit";
+import { toast } from 'react-toastify';
+
+
 
 
 
@@ -21,7 +25,7 @@ const Container = styled.div`
     min-height: 90vh;
     border-radius: 50px;
     margin: 0 auto; //
-    background-color: black;
+    background-color: ${props=>props.theme.black};
     display: flex; // гибкий контейнер
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
@@ -73,7 +77,7 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: 1.25vw;
     text-transform: none;
-    color: ${props => props.theme.body};
+    color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;
     margin: 1rem auto;
@@ -105,6 +109,43 @@ const Input = styled.input`
 `
 
 function Objects() {
+    const wallet = useWallet();
+    const [objectId, setObjID] = React.useState("");
+    const [address, setAddr] = React.useState("");
+
+    const notifySucces = (message) => toast.success(message, {
+        position: toast.POSITION.BOTTOM_CENTER
+    });
+    const notifyError = (message) => toast.error(message, {
+        position: toast.POSITION.BOTTOM_CENTER
+    });
+
+    const notifyWarning = (message) => toast.warning(message, {
+        position: toast.POSITION.BOTTOM_CENTER
+    });
+    async function transferTxn() {
+        if (objectId.length != 42 || address.length != 42) {
+            notifyWarning("Incorrect Address or Object Id")
+            return;
+        }
+        try {
+            const data = {
+                objectId: objectId,
+                recipient: address,
+                gasBudget: 10000,
+            };
+            const transferT = await wallet.signAndExecuteTransaction({
+                transaction: {
+                    kind: 'transferObject',
+                    data,
+                }
+            })
+            notifySucces("Transfered")
+        } catch (e) {
+            console.log(e);
+            notifyError("Something Went Wrong")
+        }
+    };
     return (
         <Section id = "objects">
             <Container>
@@ -121,10 +162,10 @@ function Objects() {
                     {'\n\n'}
                     And if you want to send the object to another address, then use the interface below. (P.S you can translate absolutely any object)
                     </SubText>
-                    <Input placeholder='Input Object ID' />
-                    <Input placeholder='Input Address' />
+                    <Input placeholder='Input Object ID' onChange={(e) => setObjID(e.target.value)} />
+                    <Input placeholder='Input Address' onChange={(e) => setAddr(e.target.value)} />
                     <ButtonContainer>
-                        <Button text = {"Send Object"}/>
+                        <Button text = {"Send Object"} funct = {transferTxn}/>
                     </ButtonContainer>
                 </Box>
                 <Box1>

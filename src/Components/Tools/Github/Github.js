@@ -17,7 +17,7 @@ const Container = styled.div`
     width:90%;
     min-height: 90vh;
     margin: 0 auto; //
-    background-color: black;
+    background-color: ${props=>props.theme.black};
     color: white;
     border-radius: 50px;
     display: flex; // гибкий контейнер
@@ -57,7 +57,7 @@ const ImageContainer = styled.div`
 const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
-    color: #DD6B20;
+    color: ${props=>props.theme.white};
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;

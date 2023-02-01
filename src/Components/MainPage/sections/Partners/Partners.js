@@ -3,9 +3,14 @@ import styled, { keyframes } from 'styled-components';
 import PartnerCard from './PartnerCard';
 
 const Section = styled.section`
-    min-height: 100vh;
-    width:100%;
+    margin-top: 5vh;
+    min-height: 90vh;
+    width:90%;
+    margin-left: 5vw;
     color: ${props => props.theme.body};
+    border: 0vh solid rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+    background-color: #272727;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,11 +27,12 @@ const Section = styled.section`
 `
 
 const Row = styled.div`
-    width: 100vw;
-    height: 40vh;
+    width: 90vw;
+    height: 50vh;
     white-space: nowrap;
     box-sizing: content-box;
-    margin: 2rem 0;
+    gap: 10vw;
+    justify-content: center;
     display: flex;
     @media (max-width: 64em) {
         flex-direction: column;
@@ -41,7 +47,7 @@ const MainTitle = styled.h1`
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
-    border-bottom: 2px solid ${props => props.theme.body};
+    border-bottom: 2px solid ${props => props.theme.black};
     width: fit-content;
         @media (max-width: 64em) {
             display: none;
@@ -52,10 +58,10 @@ const MainTitle = styled.h1`
 function Partners() {
     return (
         <>
-        <Section id = "partners">
         <MainTitle>
                 Partners
         </MainTitle>
+        <Section id = "partners">
             <Row>
                 <PartnerCard/>
                 <PartnerCard/>

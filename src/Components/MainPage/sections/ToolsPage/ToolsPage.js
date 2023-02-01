@@ -24,7 +24,7 @@ const Container = styled.div`
     width:85%;
     min-height: 80vh;
     margin: 0 auto; //
-    background-color: black;
+    background-color: ${props=>props.theme.black};
     display: flex; // гибкий контейнер
     gap: 5vw;
     justify-content: center; //выравнивание по центру
@@ -58,7 +58,7 @@ const Box = styled.div`
 const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
-    color: ${props => props.theme.body};
+    color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
@@ -72,7 +72,7 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: 1.5vw;
     text-transform: lowercase;
-    color: ${props => props.theme.body};
+    color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;
     margin: 1rem auto;
@@ -108,7 +108,7 @@ const MainTitle = styled.h1`
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
-    border-bottom: 0px solid ${props => props.theme.body};
+    border-bottom: 2px solid ${props => props.theme.black};
     width: fit-content;
     @media (max-width: 64em) {
         font-size: 5vw;
@@ -160,6 +160,9 @@ function ToolsPage() {
                     <Title>
                         Try our Tools
                     </Title>
+                    <SubText>
+                    This page will allow you to take a closer look at the SUI blockchain.
+                    </SubText>
                     <Btn>
                         <a href = "">
                             Our Tools

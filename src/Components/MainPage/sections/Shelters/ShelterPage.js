@@ -61,6 +61,38 @@ const Box = styled.div`
     align-items: center;
 
     .swiper{
+        width: 100%;
+        align-self: center;
+    }
+    .swiper-slide{
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 40px;
+    }
+    @media (max-width: 64em) {
+        margin-top: -12vh;
+        height: 50vh;
+        width: 90%;
+    }
+
+`
+const Box1 = styled.div`
+    width:60%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+
+    .swiper{
         width: 80%;
         align-self: center;
     }
@@ -101,7 +133,7 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: ${props => props.theme.fontlg};
     text-transform: none;
-    color: white;
+    color: ${props => props.theme.black};
     align-self: flex-start;
     width: 80%;
     margin: 1rem auto;
@@ -157,7 +189,7 @@ function ShelterPage({ text, title, links, toSite }) {
                     )}
                 </Swiper>
             </Box>
-            <Box>
+            <Box1>
                 <Title>
                     {title}
                 </Title>
@@ -167,7 +199,7 @@ function ShelterPage({ text, title, links, toSite }) {
                 <ButtonContainer>
                     <Button text={"Go To Site"} link = {toSite}/>   
                 </ButtonContainer>
-            </Box>
+            </Box1>
         </Container>
     );
 }

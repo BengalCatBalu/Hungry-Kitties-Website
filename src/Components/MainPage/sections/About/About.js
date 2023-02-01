@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Carousel from './Carousel';
+import Typewriter from 'typewriter-effect'
+
 
 
 const Section = styled.section`
@@ -23,7 +25,7 @@ const Container = styled.div`
     width:85%;
     min-height: 80vh;
     margin: 0 auto; //
-    background-color: black;
+    background-color: ${props=>props.theme.black};
     display: flex; // гибкий контейнер
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
@@ -70,7 +72,7 @@ const Box = styled.div`
 const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
-    color: #DD6B20;
+    color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
@@ -83,12 +85,12 @@ const Title = styled.h2`
 `
 
 const SubText = styled.p`
-    font-size: 1.25vw;
+    font-size: 1.3vw;
     text-transform: none;
-    color: ${props => props.theme.body};
+    color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
     font-weight: 400;
     white-space: pre-line;
     @media (max-width: 64em) {
@@ -101,7 +103,7 @@ const SubText = styled.p`
 const SubTextLight = styled.p`
     font-size: 1.5vw;
     text-transform: capitalize;
-    color: ${props => `rgba(${props.theme.bodyRgba}, 0.6)`};
+    color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;
     margin: 1rem auto;
@@ -116,12 +118,12 @@ const SubTextLight = styled.p`
 const MainTitle = styled.h1`
     font-size: ${props => props.theme.fontxxl};
     text-transform: capitalize;
-    color: black;
+    color: ${props=>props.theme.black};
     display: flex;
     justify-content: center;
+    border-bottom: 2px solid ${props=>props.theme.black};
     align-items: center;
     margin: 1rem auto;
-    border-bottom: 0px solid white;
     width: fit-content;
     @media (max-width: 64em) {
         font-size: 5vw;
@@ -134,7 +136,7 @@ function About() {
     return (
         <Section id="about">
             <MainTitle>
-                About
+                About Us
             </MainTitle>
             <Container>
                 <Box>
@@ -142,11 +144,11 @@ function About() {
                 </Box>
                 <Box>
                     <Title>
-                        We are the Hungry Kitties
+                        Hungry Kitties
                     </Title>
                     <SubText>
-                    We want to help animals and make the world kinder for this we make the process of donating funds as convenient as possible, and most importantly, an emotionally memorable event. 
-We decided to make our first NFT charity collection on Sui.We will distribute 70 percent of the income from the mint to shelters and animal welfare funds. By purchasing our NFT, a person will automatically donate money to shelters with which we cooperate.At the time of the website's release, there are only 2 shelters, but by the time the NFT is minted, it will be at least 10 shelters.We hope that by implementing this project we will help thousands of animals around the world, because Hungry Kitties is just the beginning of our Hungry Pets universe.
+                        We want to help animals and make the world kinder for this we make the process of donating funds as convenient as possible, and most importantly, an emotionally memorable event.
+                        We decided to make our first NFT charity collection on Sui.We will distribute 70 percent of the income from the mint to shelters and animal welfare funds. By purchasing our NFT, a person will automatically donate money to shelters with which we cooperate.At the time of the website's release, there are only 2 shelters, but by the time the NFT is minted, it will be at least 10 shelters.We hope that by implementing this project we will help thousands of animals around the world, because Hungry Kitties is just the beginning of our Hungry Pets universe.
                     </SubText>
                     <SubTextLight>
                     </SubTextLight>

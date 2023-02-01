@@ -1,14 +1,18 @@
 
 
 export const light = {
-    body:'#fff',
+    black:'#272727',
+    white: "#ffffff",
+    blue: '#3182CE',
+    orange: "#DD6B20",
     text:'#202020',
 
     bodyRgba:"255,255,255",
     textRgba:"32, 32, 32",
 
     carouseleColour: '#EEEDEE',
-
+    borderbig: '40px',
+    bordersmall: '20px',
 
     fontxs: '0.75vw',
     fontsm : '0.8vw',

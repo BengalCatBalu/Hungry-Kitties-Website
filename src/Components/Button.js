@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const Btn = styled.button`
     display: inline-block;
     background-color: #DD6B20;
-    color: ${props => props => props.theme.body};
+    color: ${props => props => props.theme.white};
     outline: none;
     border: none;
     white-space: nowrap;

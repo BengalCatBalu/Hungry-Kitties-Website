@@ -1,6 +1,8 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Accordion from './Accordion';
+import quest from './../../../../assets/questions.png'
+
 
 const Section = styled.div`
     min-height: 100vh;
@@ -21,7 +23,7 @@ const Section = styled.div`
 const Title = styled.h1`
     font-size: ${props => props.theme.fontxxl};
     text-transform: capitalize;
-    color: black;
+    color: #272727;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,10 +39,11 @@ const Title = styled.h1`
 
 const Container = styled.div`
     width:85%;
-    background-color: black;
+    background-color: white;
     border-radius: 50px;
     margin: 2rem auto;
     display: flex;
+    gap: 10vw;
     color: white;
     justify-content: space-between;
     align-content: center;
@@ -48,6 +51,22 @@ const Container = styled.div`
 
 const Box = styled.div`
     width: 55%;
+    img{
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        height: auto;
+    }
+`
+const ImageContainer = styled.div`
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        height: auto;
+    }
 `
 
 
@@ -76,22 +95,19 @@ function Faq() {
     }, [] )
     */
     return (
-        <Section id = "FAQ">
-            <Title>
-                FAQ
-            </Title>
+        <Section id="FAQ">
             <Container>
+                <ImageContainer>
+                    <img src = {quest} alt = "questions"/>
+                </ImageContainer>
                 <Box>
-                    <Accordion/>
-                    <Accordion/>
-                    <Accordion/>
-                    <Accordion/>
-                </Box>
-                <Box>
-                    <Accordion/>
-                    <Accordion/>
-                    <Accordion/>
-                    <Accordion/>
+                    <Title>
+                       FAQ
+                    </Title>
+                    <Accordion title={"What's the price of our NFT"} children = {"The price has not yet been announced yet."} />
+                    <Accordion title={"How to get Milki WL"} children = {""}/>
+                    <Accordion title={"When will the mint be "}/>
+                    <Accordion />
                 </Box>
             </Container>
 

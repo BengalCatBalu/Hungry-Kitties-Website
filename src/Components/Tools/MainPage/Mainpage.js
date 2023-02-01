@@ -20,7 +20,7 @@ const Container = styled.div`
     width:90%;
     min-height: 80vh;
     margin: 0vw auto; //
-    background-color: black;
+    background-color: ${props=>props.theme.black};
     border-radius: 40px;
     overflow: visible;
     display: flex; // гибкий контейнер
@@ -76,7 +76,7 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: 1.5vw;
     text-transform: none;
-    color: ${props => props.theme.body};
+    color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;
     margin: 1rem auto;
@@ -94,7 +94,7 @@ const ButtonContainer = styled.div`
 const Btn = styled.button`
     display: inline-block;
     background-color: #DD6B20;
-    color: ${props => props => props.theme.body};
+    color: ${props => props => props.theme.white};
     outline: none;
     border: none;
     white-space: nowrap;

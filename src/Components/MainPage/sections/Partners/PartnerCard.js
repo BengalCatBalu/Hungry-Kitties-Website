@@ -4,9 +4,9 @@ import logo from './../../../../assets/ToolsAssets/tuz.png'
 
 
 const Item = styled.div`
-    width: 18vw;
-    height: 22vh;
-    margin: 6vw;
+    width: 16vw;
+    height: 45vh;
+    margin: 0vw;
     padding: 3vh;
     color: black;
     display: flex;
@@ -14,7 +14,7 @@ const Item = styled.div`
     position: relative;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 
     :hover{
         transform: scale(1.1);
@@ -27,6 +27,7 @@ const Item = styled.div`
     }
     name{
         font-size: 1.5vw;
+        color: ${props=>props.theme.white};
         @media (max-width: 64em) {
             font-size: 2vw;
             color: white;

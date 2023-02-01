@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import Navigation from "./Components/Navigation";
 import About from "./Components/MainPage/sections/About/About";
 import Home from "./Components/MainPage/sections/Home/Home";
-import Roadmap from "./Components/MainPage/sections/Roadmap";
+import Roadmap from "./Components/Roadmap/Roadmap";
 import Team from "./Components/MainPage/sections/Team";
 import GlobalStyles from "./Styles/GlobalStyles";
 import Faq from "./Components/MainPage/sections/Faq/Faq";

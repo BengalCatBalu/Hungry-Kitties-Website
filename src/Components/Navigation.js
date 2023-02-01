@@ -16,7 +16,7 @@ const Section = styled.section`
     width:90vw;
     margin-left: 5vw;
     margin-top: 2vh;
-    background-color: #DD6B20;
+    background-color: ${props => props.theme.orange};
     overflow: visible;
     justify-self: center;
     border-radius: 40px;
@@ -106,8 +106,8 @@ const BigMenuItem1 = styled.li`
 
 const Btn = styled.button`
     display: inline-block;
-    background-color: ${props => props.theme.text};
-    color: ${props => props => props.theme.body};
+    background-color: #272727;
+    color: ${props => props => props.theme.white};
     outline: none;
     border: none;
     white-space: nowrap;

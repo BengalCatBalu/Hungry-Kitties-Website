@@ -17,7 +17,7 @@ import "swiper/css/navigation";
 
 
 const Section = styled.section`
-    min-height: 80vh;
+    min-height: 90vh;
     width:100%;
     color: ${props => props.theme.body};
     display: flex;
@@ -34,7 +34,7 @@ const Section = styled.section`
 const Container = styled.div`
     width:90vw;
     margin: 1vh auto;
-    background-color: white;
+    //background-color: white;
     display: flex; // гибкий контейнер
     justify-content: space-around; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
@@ -65,6 +65,7 @@ const RowContainer = styled.div`
     display: flex; // гибкий контейнер
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
+    gap:15vw;
     border-radius: 40px;
     flex-wrap: wrap;
     @media (max-width: 64em) {
@@ -84,7 +85,7 @@ const MainTitle = styled.h1`
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
-    border-bottom: 0px solid ${props => props.theme.body};
+    border-bottom: 2px solid ${props => props.theme.body};
     width: fit-content;
 
 `
@@ -107,24 +108,24 @@ function Team() {
                 >
                 <SwiperSlide>
                     <RowContainer>
-                        <Card link="./../../../../assets/balu.png" name="Balu" position="Developer" />
-                        <Card />
-                        <Card />
+                        <Card link= "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/balu.png" name="Balu" position="Bengal Cat" />
+                        <Card  link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/ikka.png" name = "Ikki" position = "Bengal Cat"/>
+                        <Card  link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/denchik.png" name = "Tyupa" position = "Black Cat"/>
                     </RowContainer>
                     <RowContainer>
-                        <Card link="./../../../../assets/balu.png" name="Balu" position="Developer" />
-                        <Card />
-                        <Shape />
+                        <Card link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/tim.png" name = "Tim" position="Blue Point"/>
+                        <Card link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/yosya.png" name = "Yosya" position="Snowshoe"/>
+                        <Shape title={"Only Cats"} text = {"In fact, it is cats who manage this project, people do all the routine work."}/>
                     </RowContainer>
                 </SwiperSlide>
                 <SwiperSlide>
                     <RowContainer>
-                        <Card link="./../../../../assets/balu.png" name="Balu" position="Developer" />
+                        <Card/>
                         <Card />
                         <Card />
                     </RowContainer>
                     <RowContainer>
-                        <Card link="./../../../../assets/balu.png" name="Balu" position="Developer" />
+                        <Card/>
                         <Card />
                         <Shape />
                     </RowContainer>

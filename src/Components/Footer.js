@@ -5,6 +5,8 @@ import Banner from './Banner';
 import Facebook from './../Icons/Facebook'
 import Twitter from './../Icons/Twitter'
 import Whitepaper from '../Icons/Whitepaper';
+import { useHistory, useLocation, useParams } from "react-router";
+import { useRef, useState } from 'react';
 
 import logo from './../assets/logo.png'
 
@@ -28,7 +30,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid ${props=>props.theme.text};
+    border-bottom: 1px solid ${props => props.theme.text};
     @media (max-width: 64em) {
         gap:5vw;
     }
@@ -93,7 +95,8 @@ const ImageContainer = styled.div`
 `
 const Bottom = styled.div`
     width: 90%;
-    margin: 0 auto;
+    margin: 1vh auto;
+    margin-bottom: 5vh;
     display: flex;
     justify-content: space-between;
     font-size: 1vw;
@@ -102,8 +105,8 @@ const Bottom = styled.div`
 `
 const Btn = styled.button`
     display: flex;
-    background-color: ${props => props.theme.text};
-    color: ${props => props => props.theme.body};
+    background-color: ${props => props.theme.black};
+    color: ${props => props => props.theme.white};
     outline: none;
     border: none;
     white-space: nowrap;
@@ -130,31 +133,47 @@ const Btn = styled.button`
 
 
 function Footer() {
+    const location = useLocation('');
+    const [click, setClick] = useState(false);
+
+    const scrollTo = (id) => {
+        let element = document.getElementById(id);
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest',
+        })
+        setClick(!click);
+    }
     return (
         <Section>
-            <Banner/>
+            <Banner />
             <Container>
                 <Left>
-                    <image src = {logo} alt = "logo"/>
+                    <image src={logo} alt="logo" />
                     <IconsList>
-                        <Btn>
-                            Twitter
-                        </Btn>
-                        <Btn>
-                            Discord
-                        </Btn>
+                        <a href="https://twitter.com/hungrykitties?s=21&t=odV5PsLZW6-35sR9Tsb9Gg">
+                            <Btn>
+                                Twitter
+                            </Btn>
+                        </a>
+                        <a href="https://discord.gg/byERdrCCRf">
+                            <Btn>
+                                Discord
+                            </Btn>
+                        </a>
                     </IconsList>
                 </Left>
                 <MenuItems>
-                    <Item>
+                    <Item onClick={() => scrollTo("home")}>
                         Home
                     </Item>
-                    <Item>Whitepaper</Item>
-                    <Item>Tools</Item>
-                    <Item>Roadmap</Item>
-                    <Item>Contact</Item>
+                    <Item onClick={() => scrollTo("whitepaper")}>Whitepaper</Item>
+                    <Item onClick={() => scrollTo("tools")}>Tools</Item>
+                    <Item> <a href='/roadmap'>Roadmap</a></Item>
+                    <Item >Contact</Item>
                     <Item>Github</Item>
-                    </MenuItems>
+                </MenuItems>
             </Container>
             <Bottom>
                 <span>

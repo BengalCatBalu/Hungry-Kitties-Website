@@ -23,7 +23,7 @@ const Title1 = styled.h2`
     font-size: ${props => props.theme.fontxxl};
     text-transform: capitalize; // каждое слово с большой буквы
     width:80%;
-    color: ${props => props.theme.text};
+    color: ${props => props.theme.black};
     align-self: flex-start;
     white-space: pre-line;
 

@@ -130,7 +130,7 @@ const Title1 = styled.h2`
 const SubText = styled.p`
     font-size: 1vw;
     text-transform: lowercase;
-    color: ${props => props.theme.body};
+    color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;
     margin: 1rem auto;
@@ -167,7 +167,7 @@ const Btn1 = styled.button`
     height: 5vh;
     display: inline-block;
     background-color: gray;
-    color: ${props => props => props.theme.body};
+    color: ${props => props => props.theme.white};
     outline: none;
     border: none;
     white-space: nowrap;
@@ -192,7 +192,7 @@ const Btn2 = styled.button`
     width: 31vw;
     display: inline-block;
     background-color: #DD6B20;
-    color: ${props => props => props.theme.body};
+    color: ${props => props => props.theme.white};
     outline: none;
     border: none;
     white-space: nowrap;

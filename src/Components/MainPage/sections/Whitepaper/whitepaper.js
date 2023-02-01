@@ -24,7 +24,7 @@ const Container = styled.div`
     width:85%;
     min-height: 80vh;
     margin: 0 auto; //
-    background-color: black;
+    background-color: #272727;
     display: flex; // гибкий контейнер
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
@@ -54,7 +54,7 @@ const Box = styled.div`
 const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
-    color: ${props => props.theme.body};
+    color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
@@ -104,7 +104,7 @@ const MainTitle = styled.h1`
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
-    border-bottom: 0px solid ${props => props.theme.body};
+    border-bottom: 2px solid ${props => props.theme.black};
     width: fit-content;
 
     @media (max-width: 64em) {

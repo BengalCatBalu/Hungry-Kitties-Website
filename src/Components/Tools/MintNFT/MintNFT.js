@@ -147,7 +147,7 @@ function MintNFT() {
                     <NftCard text={"Hello everyone, I am a Demon Cat, you can mint the NFT with me and then you will never get into my cat-inferno."} name={"Demon Cat"} link={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmYVcyMvx4J5u7QSqEtL2PJ1NfLGmW4fqgQfBZkM2kpHYv"}/>
                 </Box>
                 <Box>
-                    <NftCard link={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmXuzWsXTxBrVNYRS4DBDCvEBgVCaJmuYX8EEVuN5DkiiV"} name = {"Tuz"} text = {"Yo,I'm Ace Cat I eat only the most delicious food, and I dress coolly, I suggest you to mint nft with me to become even cooler."}/>
+                    <NftCard link={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmXuzWsXTxBrVNYRS4DBDCvEBgVCaJmuYX8EEVuN5DkiiV"} name = {"Ace"} text = {"Yo,I'm Ace Cat I eat only the most delicious food, and I dress coolly, I suggest you to mint nft with me to become even cooler."}/>
                 </Box>
                 <Box>
                     <NftCard link = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmfYMkCjh2K4abaqP9UyjbyxA3RtfF4VSgwV8rtYWHFqjL"} name = {"Magic Cat"} text = {"Meeeeew, I am a Magic Cat\nI charge other cats with positive energy.You can mint the nft with me, I hope it will be more fun for you."}/>

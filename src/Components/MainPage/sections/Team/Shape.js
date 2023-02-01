@@ -7,11 +7,11 @@ import balu from './../../../../assets/Tomas.png'
 
 
 const Item = styled.div`
-    width:17vw;
-    height: 29vh;
+    width:16vw;
+    height: 40vh;
     padding: 0vh 0vw;
     color: #DD6B20;
-    margin: 6vh 4vw;
+    margin: 10vh 0vw;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ const Item = styled.div`
     border-radius: 20px;
 `
 const Title = styled.h2`
-    font-size: 3vw;//{//props => props.theme.fontxxl}
+    font-size: 2vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
     color: black;
     align-self: flex-start;
@@ -35,12 +35,12 @@ const Title = styled.h2`
 `
 
 const SubText = styled.p`
-    font-size: 1.5vw;
-    text-transform: lowercase;
+    font-size: 1vw;
+    text-transform: none;
     color: black;
     align-self: flex-start;
     width: 80%;
-    margin: 0rem auto;
+    margin: 2rem auto;
     font-weight: 400;
     @media (max-width: 64em) {
         font-size: 2vw;
@@ -51,15 +51,14 @@ const SubText = styled.p`
 `
 
 
-function Shape() {
+function Shape({title, text}) {
     return (
         <Item>
             <Title>
-                Text
+                {title}
             </Title>
             <SubText>
-                Our team is very cool
-                <bv/>
+                {text}
             </SubText>
         </Item>
     );

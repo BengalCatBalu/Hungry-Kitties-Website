@@ -18,7 +18,7 @@ const Container = styled.div`
     width:90%;
     min-height: 90vh;
     margin: 0 auto; //
-    background-color: black;
+    background-color: ${props=>props.theme.black};
     border-radius: 50px;
     display: flex; // гибкий контейнер
     justify-content: center; //выравнивание по центру

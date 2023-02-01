@@ -4,14 +4,13 @@ import {useState} from 'react'
 
 const Container = styled.div`
     cursor: pointer;
-    background-color: white;
+    background-color: rgba(221, 107, 32, 1);
     padding: 0.5rem 0.5rem;
     display: flex;
     flex-direction: column;
     border-radius: 40px;
-    border: 0px solid black;
     margin: 3rem 3rem;
-    color: black;
+    color: ${props=>props.theme.white};
     @media (max-width: 64em) {
         border-radius: 10px;
         width: 30vw;
@@ -36,7 +35,7 @@ const Title = styled.div`
 const Reveal = styled.div`
     display:${props=>props.clicked ? 'block' : 'none'};
     margin-top: 1rem;
-    color: black;
+    color: white;
     font-size: ${props => props.theme.fontlg};
     font-weight: 300;
     line-height: 1.1rem;
@@ -54,14 +53,14 @@ const Indicator = styled.span`
     font-size: ${props => props.theme.fontxxl};
 `
 
-function Accordion(title, children) {
+function Accordion({title, children}) {
     const [collapse, setCollapse] = useState(false);
     return (
         <Container>
             <Title onClick = {() => setCollapse(!collapse)}>
                 <Name>
                     <Title>
-                        What price of NFT?
+                        {title}
                     </Title>    
                 </Name>
                 {
@@ -72,7 +71,7 @@ function Accordion(title, children) {
                 }
             </Title>
             <Reveal clicked = {collapse}>
-                Answer on the questions dsfdsjfnkjsdfkjsdsjasdjkasdkjashjdhj{'\n'}ashdjkashdjkasjkhdjashjdhashd{'\n'}hasjdhjkashkdhsahd
+                {children}
             </Reveal>
         </Container>
     );

@@ -36,7 +36,8 @@ const Container = styled.div`
     min-height: 80vh;
     margin: 0 auto; //
     border-radius: 40px;
-    background-color: black;
+    background-color: white;
+    border: 7px solid rgba(0,0, 0, 0.7);
     display: flex; // гибкий контейнер
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
@@ -56,11 +57,11 @@ const Container = styled.div`
     }
     
     .swiper-button-next{
-        color:#DD6B20
+        color:#272727
     }
 
     .swiper-button-prev{
-        color:#DD6B20
+        color:#272727
     }
 
     img{
@@ -91,7 +92,7 @@ const MainTitle = styled.h1`
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
-    border-bottom: 0px solid ${props => props.theme.text};
+    border-bottom: 2px solid ${props => props.theme.black};
     width: fit-content;
 
     @media (max-width: 64em) {

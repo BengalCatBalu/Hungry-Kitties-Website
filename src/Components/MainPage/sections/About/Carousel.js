@@ -43,14 +43,14 @@ const Container = styled.div`
     }
     
     .swiper-button-next{
-        color:#DD6B20;
+        color:${props=>props.theme.white};
         @media (max-width: 64em) {
         display: none;
     }
     }
 
     .swiper-button-prev{
-        color:#DD6B20;
+        color:${props=>props.theme.white};
         @media (max-width: 64em) {
         display: none;
     }
@@ -75,7 +75,7 @@ function Carousel() {
                 }}
 
                 pagination={{
-                    type: 'fraction',
+                    type: 'bullets',
 
                 }}
                 scrollbar={{
@@ -93,25 +93,25 @@ function Carousel() {
                     <img src={tuz} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={nft1} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5122.PNG"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={nft2} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5123.PNG"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={nft3} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5124.PNG"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={nft5} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5125.PNG"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={nft6} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5127.PNG"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={logo} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5128.PNG"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={tuz} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5134.PNG"} alt="logo" />
                 </SwiperSlide>
             </Swiper>
         </Container>

@@ -1,9 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
-import TypeWriter from './TypeWriter';
-import picture1 from './../../../../assets/logo.png'
-import picture2 from './../../../../assets/ToolsAssets/nftText.png'
+import styled from 'styled-components';
+
 
 const Section = styled.section`
 min-height: ${props => `calc(100vh - ${props.theme.navHeight}) - 5vh`};
@@ -17,7 +14,7 @@ const Container = styled.div`
     width:85%;
     min-height: 60vh;
     margin: 0vw auto; //
-    background-color: ${props=>props.theme.body};
+    background-color: ${props => props.theme.body};
     overflow: visible;
     display: flex; // гибкий контейнер
     justify-content: center; //выравнивание по центру
@@ -49,41 +46,17 @@ const Box = styled.div`
     }
 
 `
-const Box1 = styled.div`
-    width:50%;
-    height:50vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    //align-items: flex-end;
-`
 
-
-const VideoContainer = styled.div`
-    width:100%;
-    height: 100vh;
-
-    img{
-        width:100%;
-        height:auto;
-    }
-`
-
-function Home() {
+function Roadmap() {
     return (
-        <Section id = "home">
-            <Container>
-                <Box1>
-                    <TypeWriter/>
-                </Box1>
-                <Box>
-                    <VideoContainer>
-                        <img src = {picture2} alt = "picture"/>
-                    </VideoContainer>
-                </Box>
-            </Container>
-        </Section>
+        <>
+            <Section>
+                <Container>
+                    Картинка
+                </Container>
+            </Section>
+        </>
     );
 }
 
-export default Home;
+export default Roadmap;

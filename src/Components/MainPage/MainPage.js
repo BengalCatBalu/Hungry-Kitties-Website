@@ -7,6 +7,7 @@ import Shelters from './sections/Shelters/Shelters';
 import Whitepaper from './sections/Whitepaper/whitepaper';
 import ToolsPage from './sections/ToolsPage/ToolsPage';
 import Partners from './sections/Partners/Partners';
+import MyComponent from 'react-fullpage-custom-loader'
 
 
 function MainPage() {
