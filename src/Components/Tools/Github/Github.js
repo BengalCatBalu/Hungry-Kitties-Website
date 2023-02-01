@@ -121,7 +121,7 @@ function Github() {
                         our github, this site is completely open access!
                     </SubText>
                     <BtnContainer>
-                        <a href="https://github.com/kadjit228/Hungry-Kitties-Website/tree/main/src/Components/Tools">
+                        <a href="https://github.com/BengalCatBalu/Tools-Components">
                             <Btn>
                                 Our Github
                             </Btn>
