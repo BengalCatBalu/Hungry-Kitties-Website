@@ -17,7 +17,7 @@ const Container = styled.div`
     width:90%;
     min-height: 90vh;
     margin: 0 auto; //
-    background-color: ${props=>props.theme.black};
+    background-color: ${props => props.theme.black};
     color: white;
     border-radius: 50px;
     display: flex; // гибкий контейнер
@@ -57,7 +57,7 @@ const ImageContainer = styled.div`
 const Title = styled.h2`
     font-size: 3vw;//{//props => props.theme.fontxxl}
     text-transform: capitalize;
-    color: ${props=>props.theme.white};
+    color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;
     margin: 0 auto;
@@ -110,7 +110,7 @@ const Btn = styled.button`
 
 function Github() {
     return (
-        <Section id = "tools-github">
+        <Section id="tools-github">
             <Container>
                 <Box>
                     <Title>
@@ -121,27 +121,37 @@ function Github() {
                         our github, this site is completely open access!
                     </SubText>
                     <BtnContainer>
-                        <Btn>
-                            Our Github
-                        </Btn>
-                        <Btn>
-                            <a href='https://docs.sui.io/sui-jsonrpc'> Sui JSON RPC DOCS</a>
-                        </Btn>
+                        <a href="https://github.com/kadjit228/Hungry-Kitties-Website/tree/main/src/Components/Tools">
+                            <Btn>
+                                Our Github
+                            </Btn>
+                        </a>
+                        <a href='https://docs.sui.io/sui-jsonrpc'>
+                            <Btn>
+                                Sui JSON RPC DOCS
+                            </Btn>
+                        </a>
                     </BtnContainer>
                     <SubText1>
                         Also, for help in developing this site, we would like to thank
                         Suiet Wallet, Origin Byte, Keepsake
                     </SubText1>
                     <BtnContainer>
-                        <Btn>
-                            <a href='https://suiet.app/developer'> Suiet Wallet </a>
-                        </Btn>
-                        <Btn>
-                            <a href='https://originbyte.io/'> Origin Byte Site </a>
-                        </Btn>
-                        <Btn>
-                            <a href='https://keepsake.gg/'> Keepsake </a>
-                        </Btn>
+                        <a href='https://suiet.app/developer'>
+                            <Btn>
+                                Suiet Wallet
+                            </Btn>
+                        </a>
+                        <a href='https://originbyte.io/'>
+                            <Btn>
+                                Origin Byte Site
+                            </Btn>
+                        </a>
+                        <a href='https://keepsake.gg/'>
+                            <Btn>
+                                Keepsake
+                            </Btn>
+                        </a>
                     </BtnContainer>
                 </Box>
                 <ImageContainer>
