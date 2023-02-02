@@ -8,7 +8,9 @@ import { BrowserRouter } from 'react-router-dom'
 import { WalletProvider } from '@suiet/wallet-kit';
 import '@suiet/wallet-kit/style.css';
 import '@suiet/wallet-kit/style.css';
-import './suiet-wallet-kit-custom.css'
+import './suiet-wallet-kit-custom.css';
+import { Lines } from 'react-preloaders';
+
 
 ReactDOM.render(
   <React.StrictMode>

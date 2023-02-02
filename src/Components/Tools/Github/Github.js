@@ -110,55 +110,55 @@ const Btn = styled.button`
 
 function Github() {
     return (
-        <Section id="tools-github">
-            <Container>
-                <Box>
-                    <Title>
-                        You can check our GitHub
-                    </Title>
-                    <SubText>
-                        It is important for us to help new sui developers. You can check
-                        our github, this site is completely open access!
-                    </SubText>
-                    <BtnContainer>
-                        <a href="https://github.com/BengalCatBalu/Tools-Components">
-                            <Btn>
-                                Our Github
-                            </Btn>
-                        </a>
-                        <a href='https://docs.sui.io/sui-jsonrpc'>
-                            <Btn>
-                                Sui JSON RPC DOCS
-                            </Btn>
-                        </a>
-                    </BtnContainer>
-                    <SubText1>
-                        Also, for help in developing this site, we would like to thank
-                        Suiet Wallet, Origin Byte, Keepsake
-                    </SubText1>
-                    <BtnContainer>
-                        <a href='https://suiet.app/developer'>
-                            <Btn>
-                                Suiet Wallet
-                            </Btn>
-                        </a>
-                        <a href='https://originbyte.io/'>
-                            <Btn>
-                                Origin Byte Site
-                            </Btn>
-                        </a>
-                        <a href='https://keepsake.gg/'>
-                            <Btn>
-                                Keepsake
-                            </Btn>
-                        </a>
-                    </BtnContainer>
-                </Box>
-                <ImageContainer>
-                    <img src={picture} alt="programmer" />
-                </ImageContainer>
-            </Container>
-        </Section>
+            <Section id="tools-github">
+                <Container>
+                    <Box>
+                        <Title>
+                            You can check our GitHub
+                        </Title>
+                        <SubText>
+                            It is important for us to help new sui developers. You can check
+                            our github, this site is completely open access!
+                        </SubText>
+                        <BtnContainer>
+                            <a href="https://github.com/BengalCatBalu/Tools-Components">
+                                <Btn>
+                                    Our Github
+                                </Btn>
+                            </a>
+                            <a href='https://docs.sui.io/sui-jsonrpc'>
+                                <Btn>
+                                    Sui JSON RPC DOCS
+                                </Btn>
+                            </a>
+                        </BtnContainer>
+                        <SubText1>
+                            Also, for help in developing this site, we would like to thank
+                            Suiet Wallet, Origin Byte, Keepsake
+                        </SubText1>
+                        <BtnContainer>
+                            <a href='https://suiet.app/developer'>
+                                <Btn>
+                                    Suiet Wallet
+                                </Btn>
+                            </a>
+                            <a href='https://originbyte.io/'>
+                                <Btn>
+                                    Origin Byte Site
+                                </Btn>
+                            </a>
+                            <a href='https://keepsake.gg/'>
+                                <Btn>
+                                    Keepsake
+                                </Btn>
+                            </a>
+                        </BtnContainer>
+                    </Box>
+                    <ImageContainer>
+                        <img src={picture} alt="programmer" />
+                    </ImageContainer>
+                </Container>
+            </Section>
     );
 }
 

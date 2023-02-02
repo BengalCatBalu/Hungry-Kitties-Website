@@ -23,6 +23,7 @@
     "react-fullpage-custom-loader": "^0.1.6",
     "react-modern-drawer": "^1.2.0",
     "react-numeric-input": "^2.2.3",
+    "react-preloaders": "^3.0.3",
     "react-radio-buttons": "^1.2.2",
     "react-radio-group": "^3.0.3",
     "react-router-dom": "^6.2.1",
