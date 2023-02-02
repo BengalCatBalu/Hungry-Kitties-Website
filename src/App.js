@@ -23,7 +23,7 @@ function App() {
       <GlobalStyles />
       <ThemeProvider theme={light}>
         <div className="preloader">
-          <Preloader/>
+          <Preloader />
           <script src="./reloader.js"></script>
         </div>
         <Navigation />

@@ -171,8 +171,8 @@ function Footer() {
                     <Item onClick={() => scrollTo("whitepaper")}>Whitepaper</Item>
                     <Item onClick={() => scrollTo("tools")}>Tools</Item>
                     <Item> <a href='/roadmap'>Roadmap</a></Item>
-                    <Item >Contact</Item>
-                    <Item>Github</Item>
+                    <Item>Contact</Item>
+                    <Item><a href = "https://github.com/BengalCatBalu/Tools-Components">Github</a></Item>
                 </MenuItems>
             </Container>
             <Bottom>

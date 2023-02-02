@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Paralax from './Parallax';
 
 
 const Section = styled.section`
@@ -51,9 +52,7 @@ function Roadmap() {
     return (
         <>
             <Section>
-                <Container>
-                    Картинка
-                </Container>
+                <Paralax/>
             </Section>
         </>
     );
