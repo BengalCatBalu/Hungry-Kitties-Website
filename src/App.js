@@ -15,15 +15,19 @@ import Banner from "./Components/Banner";
 import './App.css'
 import './reloader.js'
 import Preloader from "./Icons/Preloader";
+import Button from "./Components/Button";
+import Typewriter from 'typewriter-effect'
 
 
-const Title = styled.h1`
-  color: #DD6B20;
-  font-size: 1vw;
-  text-align: center;
-  margin-top: 55vh;
+const ButCont = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 40vh;
+  font-size: 3vw;
+  font-weight: 700;
   @media(max-width: 64em) {
     font-size: 5vw;
+    margin-top: 35vh;
   }
 `
 function App() {
@@ -33,18 +37,27 @@ function App() {
       <ThemeProvider theme={light}>
         <div className="preloader">
           <Preloader />
-          <Title className="title">
-            Loading...
-          </Title>
+          <ButCont>
+            <Typewriter
+              options={{
+                autostart: true,
+                loop: true,
+              }}
+              onInit={(typewriter) => {
+                typewriter.typeString('<span className = "text-1">Loading...</span>')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .start();
+              }}
+            />
+          </ButCont>
           <script src="./reloader.js"></script>
         </div>
-        <Navigation />
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/tools' element={<Tools />} />
           <Route path='/Roadmap' element={<Roadmap />} />
         </Routes>
-        <Footer />
       </ThemeProvider>
     </>
   );

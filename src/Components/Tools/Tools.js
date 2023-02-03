@@ -11,6 +11,8 @@ import Github from './Github/Github';
 import GenerateNft from './GenerateNft/GenerateNft';
 import styled from 'styled-components';
 import PhonePage from './PagePhone';
+import Navigation from '../Navigation';
+import Footer from '../Footer';
 
 const Main = styled.div`
     @media (max-width: 64em) {
@@ -29,6 +31,7 @@ function Tools() {
     return (
         <>
             <Main name='tools'>
+                <Navigation/>
                 <ToolsHome />
                 <MintNFT />
                 <PaySuiText />
@@ -37,6 +40,7 @@ function Tools() {
                 <Objects />
                 <GenerateNft />
                 <Github />
+                <Footer/>
             </Main>
             <MainPhone>
                 <PhonePage/>

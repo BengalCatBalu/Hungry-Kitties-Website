@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import NavBar from './NavBar';
 import Paralax from './Parallax';
 
 
 const Section = styled.section`
-min-height: ${props => `calc(100vh - ${props.theme.navHeight}) - 5vh`};
+min-height: 100vh;
 width:100vw;
-margin-top: 5vh;
 
 position: relative;
 background-color:${props => props.theme.body};
@@ -52,6 +52,7 @@ function Roadmap() {
     return (
         <>
             <Section>
+                <NavBar/>
                 <Paralax/>
             </Section>
         </>

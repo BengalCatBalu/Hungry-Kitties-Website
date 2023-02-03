@@ -7,11 +7,14 @@ import Shelters from './sections/Shelters/Shelters';
 import Whitepaper from './sections/Whitepaper/whitepaper';
 import ToolsPage from './sections/ToolsPage/ToolsPage';
 import Partners from './sections/Partners/Partners';
+import Navigation from '../Navigation';
+import Footer from '../Footer';
 
 
 function MainPage() {
     return (
         <>
+            <Navigation/>
             <Home/>
             <About/>
             <Shelters/>
@@ -20,6 +23,7 @@ function MainPage() {
             <Team/>
             <Partners/>
             <Faq/>
+            <Footer/>
         </>
     );
 }
