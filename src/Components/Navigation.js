@@ -129,6 +129,7 @@ const Btn = styled.button`
     @media (max-width: 64em) {
         /*1024px*/
         font-size: 4vw;
+        background-color: ${props=>props.theme.orange};
     }
     
 `

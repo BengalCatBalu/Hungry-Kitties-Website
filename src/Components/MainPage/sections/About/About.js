@@ -17,7 +17,7 @@ const Section = styled.section`
     align-items: center;
     position: relative;
     @media (max-width: 64em) {
-        background-color: black;
+        background-color: #272727;
     }
 `
 
@@ -35,7 +35,7 @@ const Container = styled.div`
         width: 85%;
 
         &>*:last-child{
-            width: 80%;
+            width: 90%;
         }
     }
 
@@ -47,7 +47,7 @@ const Container = styled.div`
         gap: 0vh;
 
         &>*:last-child{
-            width: 80%;
+            width: 90%;
             margin-top: -0vh ;
         }
     }
@@ -62,7 +62,7 @@ const Box = styled.div`
     justify-content: center;
     align-items: center;
     @media (max-width: 64em) {
-        width: 80%;
+        width: 100%;
         height: 50%;
 
     }
@@ -79,6 +79,7 @@ const Title = styled.h2`
     @media (max-width: 64em) {
         align-self: center;
         text-align: center;
+        color: ${props=>props.theme.orange};
         font-size: 5vw;
 
     }
@@ -96,7 +97,7 @@ const SubText = styled.p`
     @media (max-width: 64em) {
         align-self: center;
         text-align: center;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 `
 
@@ -127,7 +128,8 @@ const MainTitle = styled.h1`
     width: fit-content;
     @media (max-width: 64em) {
         font-size: 5vw;
-        color:#DD6B20;
+        color:white;
+        border-bottom: 2px solid ${props=>props.theme.white};
     }
 
 `

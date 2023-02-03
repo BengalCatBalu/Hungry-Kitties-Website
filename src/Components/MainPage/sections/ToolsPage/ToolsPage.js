@@ -16,7 +16,7 @@ const Section = styled.section`
     align-items: center;
     position: relative;
     @media (max-width: 64em) {
-        background-color: black;
+        background-color: #272727;
     }
 `
 
@@ -112,7 +112,8 @@ const MainTitle = styled.h1`
     width: fit-content;
     @media (max-width: 64em) {
         font-size: 5vw;
-        color:#DD6B20;
+        color:white;
+        border-bottom: 2px solid ${props => props.theme.white};
     }
 
 `
@@ -142,7 +143,7 @@ const Btn = styled.button`
         transform: scale(0.9);
     }
     @media (max-width: 64em) {
-        font-size: 3vw;
+        font-size: 4vw;
         align-self: center;
         text-align: center;
     }

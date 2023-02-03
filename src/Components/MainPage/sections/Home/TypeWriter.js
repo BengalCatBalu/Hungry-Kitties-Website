@@ -10,8 +10,10 @@ const Title = styled.h2`
     width:80%;
     color: ${props => props.theme.text};
     align-self: flex-start;
-    @media (max-width: 70em) {
+    @media (max-width: 64em) {
         margin-top: 1vh;
+        font-size: 5vw;
+        white-space: nowrap;
         align-self: center;
         text-align: center;
     }
@@ -20,7 +22,7 @@ const Title = styled.h2`
 
 const Title1 = styled.h2`
     margin-top: -0.5vh;
-    font-size: ${props => props.theme.fontxxl};
+    font-size: ${props => props.theme.fontxl};
     text-transform: capitalize; // каждое слово с большой буквы
     width:80%;
     color: ${props => props.theme.black};
@@ -32,20 +34,20 @@ const Title1 = styled.h2`
     }
     .text-1{
         color:#DD6B20;
-        font-size: ${props => props.theme.fontxl};
     }
     .text-2{
         color: #3182CE;
-        font-size: ${props => props.theme.fontxl};
     }
 
-    @media (max-width: 70em) {
+    @media (max-width: 64em) {
         margin-top: 1vh;
+        font-size: 3vw;
         align-self: center;
         text-align: center;
     }
     @media (max-width: 48em) {
         margin-top: 1vh;
+        font-size: 3vw;
         align-self: center;
         text-align: center;
     }
@@ -62,14 +64,14 @@ const SubTitle = styled.h3`
     .sui{
         color: #3182CE;
     }
-    @media (max-width: 70em) {
-        font-size: ${props => props.theme.fontlg};
+    @media (max-width: 64em) {
+        font-size: 3vw;
         margin-top: 1vh;
         align-self: center;
         text-align: center;
     }
     @media (max-width: 48em) {
-        font-size: ${props => props.theme.fontlg};
+        font-size: 3vw;
         margin-top: 1vh;
         align-self: center;
         text-align: center;

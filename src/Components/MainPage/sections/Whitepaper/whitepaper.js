@@ -16,7 +16,7 @@ const Section = styled.section`
     align-items: center;
     position: relative;
     @media (max-width: 64em) {
-        background-color: black;
+        background-color: #272727;
     }
 `
 
@@ -48,6 +48,9 @@ const Box = styled.div`
     img{
         width: 70%;
         height: auto;
+        @media (max-width: 64em) {
+            width: 100%;
+        }
     }
 `
 
@@ -109,7 +112,8 @@ const MainTitle = styled.h1`
 
     @media (max-width: 64em) {
         font-size: 5vw;
-        color:#DD6B20;
+        color:white;
+        border-bottom: 2px solid ${props => props.theme.white};
     }
 
 `

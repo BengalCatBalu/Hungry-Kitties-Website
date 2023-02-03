@@ -25,8 +25,8 @@ const Container = styled.div`
     height:100%;
 
     @media (max-width: 64em) {
-        height: 30vh;
-        width: 70vw;
+        height: 40vh;
+        width: 90vw;
         justify-content: center;
     }
 

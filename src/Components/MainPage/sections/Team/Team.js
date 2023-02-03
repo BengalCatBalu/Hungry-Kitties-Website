@@ -27,7 +27,7 @@ const Section = styled.section`
     position: relative;
 
     @media (max-width: 64em) {
-        background-color: black;
+        background-color: white;
     }
 `
 
@@ -42,19 +42,19 @@ const Container = styled.div`
     flex-wrap: wrap;
     @media (max-width: 64em) {
         margin-top: -2vh;
-        background-color: black;
+        background-color: white;
     }
     .swiper-button-next{
         color:black;
         @media (max-width: 64em) {
-            color: #DD6B20;
+            display: none;
         }
     }
 
     .swiper-button-prev{
         color:black;
         @media (max-width: 64em) {
-            color: #DD6B20;
+            display: none;
         }
     }
 
@@ -73,6 +73,7 @@ const RowContainer = styled.div`
         justify-content: center;
         gap: 10vh;
         margin-top: 10vh;
+        background-color: white;
     }
 
 `
@@ -85,8 +86,13 @@ const MainTitle = styled.h1`
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
-    border-bottom: 2px solid ${props => props.theme.body};
+    border-bottom: 2px solid ${props => props.theme.black};
     width: fit-content;
+    @media (max-width: 64em) {
+        font-size: 5vw;
+        color:#272727;
+        border-bottom: 5px solid ${props => props.theme.black};
+    }
 
 `
 

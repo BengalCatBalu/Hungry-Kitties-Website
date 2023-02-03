@@ -15,8 +15,8 @@ const Section = styled.div`
     flex-direction: column;
     @media (max-width: 64em) {
         min-height: 0vh;
-        background-color: black;
-        height: 60vh;
+        background-color: white;
+        height: 100vh;
     }
 `
 
@@ -32,7 +32,8 @@ const Title = styled.h1`
     width: fit-content;
     @media (max-width: 64em) {
        color:#DD6B20;
-       border: 0px;
+       font-size: 5vw;
+
     }
 
 `
@@ -47,6 +48,11 @@ const Container = styled.div`
     color: white;
     justify-content: space-between;
     align-content: center;
+    @media (max-width: 64em) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 const Box = styled.div`
@@ -66,6 +72,9 @@ const ImageContainer = styled.div`
     img{
         width: 100%;
         height: auto;
+    }
+    @media (max-width: 64em) {
+        width: 80%;
     }
 `
 

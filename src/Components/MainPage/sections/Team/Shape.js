@@ -18,6 +18,9 @@ const Item = styled.div`
     margin-bottom: 10vh;
     border: 0px solid ${props => props.theme.text};
     border-radius: 20px;
+    @media (max-width: 64em) {
+        display: none;
+    }
 `
 const Title = styled.h2`
     font-size: 2vw;//{//props => props.theme.fontxxl}
@@ -27,7 +30,8 @@ const Title = styled.h2`
     width: 80%;
     margin: 0 auto;
     @media (max-width: 64em) {
-        font-size: 4vw;
+        font-size: 5vw;
+        white-space: nowrap;
         align-self: center;
         text-align: center;
         color: black;

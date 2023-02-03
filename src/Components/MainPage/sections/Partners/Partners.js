@@ -17,6 +17,7 @@ const Section = styled.section`
     align-items: center;
     position: relative;
     @media (max-width: 64em) {
+        display: none;
         min-height: 0vh;
         flex-direction: row;
         justify-content: center;

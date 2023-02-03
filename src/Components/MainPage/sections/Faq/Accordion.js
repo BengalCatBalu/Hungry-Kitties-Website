@@ -12,8 +12,8 @@ const Container = styled.div`
     margin: 3rem 3rem;
     color: ${props=>props.theme.white};
     @media (max-width: 64em) {
-        border-radius: 10px;
-        width: 30vw;
+        border-radius: 20px;
+        width: 50vw;
         margin: 5vh auto;
     }
 `
@@ -28,7 +28,7 @@ const Title = styled.div`
     @media (max-width: 64em) {
         align-self: center;
         text-align: center;
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
 `
 
@@ -40,6 +40,11 @@ const Reveal = styled.div`
     font-weight: 300;
     line-height: 1.1rem;
     margin-left: 2vw;
+    @media (max-width: 64em) {
+        align-self: center;
+        text-align: center;
+        font-size: 3vw;
+    }
 `
 
 const Name = styled.div`

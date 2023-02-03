@@ -28,7 +28,7 @@ align-items: center;
 @media (max-width: 64em) {
         border-radius: 0;
         width: 100%;
-        background-color: black;
+        background-color: white;
     }
 `
 const Container = styled.div`
@@ -57,11 +57,17 @@ const Container = styled.div`
     }
     
     .swiper-button-next{
-        color:#272727
+        color:#272727;
+        @media (max-width: 64em) {
+            display: none;
+        }
     }
 
     .swiper-button-prev{
-        color:#272727
+        color:#272727;
+        @media (max-width: 64em) {
+            display: none;
+        }
     }
 
     img{
@@ -72,6 +78,7 @@ const Container = styled.div`
     @media (max-width: 64em) {
         border-radius: 0;
         width: 100%;
+        border: 0px solid rgba(0,0, 0, 0.7);
     }
 
 `
@@ -97,14 +104,14 @@ const MainTitle = styled.h1`
 
     @media (max-width: 64em) {
         font-size: 5vw;
-        color:#DD6B20;
+        color:#272727;
     }
 
 `
 
 function Shelters() {
     return (
-        <Section id = "shelters">
+        <Section id="shelters">
             <MainTitle>
                 Shelters
             </MainTitle>
@@ -118,7 +125,7 @@ function Shelters() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <ShelterPage title = {"Edinburgh Dog and Cat Home"} text = {"This is a small but very good shelter from Scotland, founded in 1884. For 140 years, this shelter has been helping many cats and dogs.«Here at Edinburgh Dog and Cat Home, we strive to make sure that every pet has the loving home it deserves. And we get our claws into our cause.»"} links = {[
+                        <ShelterPage title={"Edinburgh Dog and Cat Home"} text={"This is a small but very good shelter from Scotland, founded in 1884. For 140 years, this shelter has been helping many cats and dogs.«Here at Edinburgh Dog and Cat Home, we strive to make sure that every pet has the loving home it deserves. And we get our claws into our cause.»"} links={[
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/7.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/2.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/3.png",
@@ -128,17 +135,17 @@ function Shelters() {
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/1.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/8.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/9.png",
-                        ]} toSite = {"https://edch.org.uk/"}/>
+                        ]} toSite={"https://edch.org.uk/"} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <ShelterPage title = {"Heaven on Earth"} text = {"The shelter was founded in 2000 in Los Angeles, which has a large number of assistance programs for cats and kittens.Heaven on Earth has come a long way in its 20 years as an organization, and the team continues to change and grow."} links = {[
+                        <ShelterPage title={"Heaven on Earth"} text={"The shelter was founded in 2000 in Los Angeles, which has a large number of assistance programs for cats and kittens.Heaven on Earth has come a long way in its 20 years as an organization, and the team continues to change and grow."} links={[
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/1.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/2.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/3.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/4.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/5.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/6.png",
-                        ]} toSite = {"https://heavenlypets.org/"}/>
+                        ]} toSite={"https://heavenlypets.org/"} />
                     </SwiperSlide>
                 </Swiper>
             </Container>

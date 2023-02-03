@@ -1,12 +1,6 @@
 import React from 'react';
 import { useRef, useState } from "react";
 import logo from './../../../../assets/ToolsAssets/dinoFree.png'
-
-
-
-
-
-
 import styled, { keyframes } from 'styled-components';
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -75,11 +69,15 @@ const Box = styled.div`
         width: 100%;
         height: auto;
         border-radius: 40px;
+        @media (max-width: 64em) {
+        border-radius: 0px;
+    }
     }
     @media (max-width: 64em) {
-        margin-top: -12vh;
+        margin-top: -20vh;
         height: 50vh;
-        width: 90%;
+        width: 100%;
+        border-radius: 0px;
     }
 
 `
@@ -109,8 +107,7 @@ const Box1 = styled.div`
         border-radius: 40px;
     }
     @media (max-width: 64em) {
-        margin-top: -12vh;
-        height: 50vh;
+        height: 60vh;
         width: 90%;
     }
 

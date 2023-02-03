@@ -23,8 +23,8 @@ const Item = styled.div`
     justify-content: center;
     transition: all 0.5s ease;
     @media (max-width: 64em) {
-        width: 40vw;
-        height: 30vh;
+        width: 50vw;
+        height: 40vh;
         margin: 0;
     }
     :hover{
@@ -41,7 +41,7 @@ const ImageContainer = styled.div`
     transition: all 0.5s ease;
     overflow: hidden;
     @media (max-width: 64em) {
-        width: 40vw;
+        width: 50vw;
         height: 30vh;
         margin: 0;
         border: 0px solid #DD6B20;
@@ -74,7 +74,7 @@ const Name = styled.h2`
         font-size: 4vw;
         align-self: center;
         text-align: center;
-        color: #DD6B20;
+        color: white;
     }
 `
 const Position = styled.h2`
@@ -92,7 +92,7 @@ const Position = styled.h2`
         font-size: 3vw;
         align-self: center;
         text-align: center;
-        color: #DD6B20;
+        color: white;
     }
 `
 
