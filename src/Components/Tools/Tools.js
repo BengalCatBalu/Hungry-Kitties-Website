@@ -13,6 +13,7 @@ import styled from 'styled-components';
 import PhonePage from './PagePhone';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
+import EventSection from './EventHandler/EventSection';
 
 const Main = styled.div`
     @media (max-width: 64em) {
@@ -39,6 +40,7 @@ function Tools() {
                 <PaySui />
                 <Objects />
                 <GenerateNft />
+                {/*<EventSection/>*/}
                 <Github />
                 <Footer/>
             </Main>
