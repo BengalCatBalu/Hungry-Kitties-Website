@@ -35,6 +35,7 @@ function App() {
     <>
       <GlobalStyles />
       <ThemeProvider theme={light}>
+        {/*
         <div className="preloader">
           <Preloader />
           <ButCont>
@@ -53,6 +54,7 @@ function App() {
           </ButCont>
           <script src="./reloader.js"></script>
         </div>
+            */}
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/tools' element={<Tools />} />
