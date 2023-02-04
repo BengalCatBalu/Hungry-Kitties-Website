@@ -1,13 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBar from './NavBar';
-import Paralax from './Parallax';
+import Paralax1 from './Parallax';
 
 
 const Section = styled.section`
 min-height: 100vh;
 width:100vw;
 
+position: relative;
+background-color:${props => props.theme.body};
+`
+const Section1 = styled.section`
+min-height: 100vh;
+width:100vw;
+margin-top: 15vh;
 position: relative;
 background-color:${props => props.theme.body};
 `
@@ -32,8 +39,8 @@ const Container = styled.div`
 `
 
 const Box = styled.div`
-    width:50%;
-    height:80vh;
+    width:100%;
+    height:100vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -45,6 +52,10 @@ const Box = styled.div`
             margin-top: 20vh;
         }
     }
+    img{
+        width: 100%;
+        height: auto;
+    }
 
 `
 
@@ -53,7 +64,7 @@ function Roadmap() {
         <>
             <Section>
                 <NavBar/>
-                <Paralax/>
+                <Paralax1/>
             </Section>
         </>
     );
