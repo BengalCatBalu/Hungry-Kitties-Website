@@ -113,10 +113,10 @@ function Faq() {
                     <Title>
                        FAQ
                     </Title>
-                    <Accordion title={"What's the price of our NFT"} children = {"The price has not yet been announced yet."} />
-                    <Accordion title={"How to get Milki WL"} children = {""}/>
-                    <Accordion title={"When will the mint be "}/>
-                    <Accordion />
+                    <Accordion title={"How are you going to develop further?"} children = {"We want to become a universe of Hungry Pets. Read more about it in our whitepaper."} />
+                    <Accordion title={"How much do you donate to shelters?"} children = {"We donate 70% of the funds from the sale of the collection"}/>
+                    <Accordion title={"What Supply?"} children = {"This will be 5555 unique nft"}/>
+                    <Accordion title={"How to get Milky WL?"} children = {"Follow the information in our social networks. There will be many different ways"}/>
                 </Box>
             </Container>
 

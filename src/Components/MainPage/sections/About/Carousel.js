@@ -4,11 +4,6 @@ import styled from 'styled-components';
 import { EffectFlip, Pagination, Navigation, Autoplay } from "swiper";
 import logo from './../../../../assets/ToolsAssets/dinoFree.png'
 import tuz from './../../../../assets/ToolsAssets/img3.png'
-import nft1 from './../../../../assets/Nft/nft1.png'
-import nft2 from './../../../../assets/Nft/nft2.png'
-import nft3 from './../../../../assets/Nft/nft3.png'
-import nft5 from './../../../../assets/Nft/nft5.png'
-import nft6 from './../../../../assets/Nft/nft6.png'
 
 
 

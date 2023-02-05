@@ -7,7 +7,7 @@ const Item = styled.div`
     width: 16vw;
     height: 45vh;
     margin: 0vw;
-    padding: 3vh;
+    padding: 2vh;
     color: black;
     display: flex;
     flex-direction: column;
@@ -17,16 +17,21 @@ const Item = styled.div`
     transition: all 0.5s ease;
 
     :hover{
-        transform: scale(1.1);
+        transform: scale(1);
     }
     img{
-        width:100%;
+        width:150%;
         height: auto;
         border-radius: 10px;
-        transition: all 0.125s ease;
+        transition: all 0.4s ease;
+        margin-left: -4vw;        
+        :hover{
+            transform: scale(1.2);
+        }
     }
     name{
         font-size: 1.5vw;
+        margin-top: -8vh;
         color: ${props=>props.theme.white};
         @media (max-width: 64em) {
             font-size: 2vw;
@@ -40,12 +45,14 @@ const Item = styled.div`
 
 `
 
-function PartnerCard() {
+function PartnerCard({image, text, link}) {
     return (
         <Item>
-                <img src={logo} alt="image" />
+                <a href = {link}>
+                <img src={image} alt="image" />
+                </a>
                 <name>
-                    The Best Cat In The World
+                    {text}
                 </name>
         </Item>
     );

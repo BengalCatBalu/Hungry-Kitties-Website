@@ -11,7 +11,7 @@ const Section = styled.section`
     position: relative;
     border-top: 2px solid ${props => props.theme.text};
 
-    background-color: ${props=>`rgba(${props.theme.textRgba}, 0.9)`};
+    background-color: ${props => `rgba(${props.theme.textRgba}, 0.9)`};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +28,12 @@ const Section = styled.section`
 const ButtonContainer = styled.div`
     width: 35%;
     display: flex;
-    justify-content: flex-end;
-    font-size: ${props=>props.theme.fontxxxl};
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 2vh;
+    font-size: ${props => props.theme.fontxxxl};
 
 `
 
@@ -55,24 +59,25 @@ const ImgContainer = styled.div`
 `
 
 const Title = styled.h1`
-    font-size: ${props=>props.theme.fontxxl};
-    color: ${props=>props.theme.white};
+    font-size: ${props => props.theme.fontxxxl};
+    color: ${props => props.theme.white};
     padding: 1rem 2rem;
     z-index: 10;
     width: 35%;
     @media (max-width: 64em) {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 `
 const Btn = styled.button`
-    display: inline-block;
+    display: flex;
+    width: 15vw;
     background-color: ${props => props.theme.white};
     color: ${props => props => props.theme.black};
     outline: none;
     border: none;
     white-space: nowrap;
-    font-size: ${props => props.theme.fontxl};
-    justify-items: center;
+    font-size: ${props => props.theme.fontlg};
+    justify-content: center;
     align-items: center;
     padding: 0.9rem 2.5rem;
     border-radius: 50px;
@@ -86,7 +91,8 @@ const Btn = styled.button`
         transform: scale(0.9);
     }
     @media (max-width: 64em) {
-        font-size: 2vw;
+        font-size: 2.5vw;
+        width: 25vw;
     }
 `
 
@@ -94,20 +100,27 @@ function Banner() {
     return (
         <Section>
             <ImgContainer>
-                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5133.PNG"} alt = "The Hungry Kitties"/>
-                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5132.PNG"} alt = "The Hungry Kitties"/>
-                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5124.PNG"} alt = "The Hungry Kitties"/>
-                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5133.PNG"} alt = "The Hungry Kitties"/>
-                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5127.PNG"} alt = "The Hungry Kitties"/>
-                <img src = {"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5123.PNG"} alt = "The Hungry Kitties"/>
+                <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5133.PNG"} alt="The Hungry Kitties" />
+                <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5132.PNG"} alt="The Hungry Kitties" />
+                <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5124.PNG"} alt="The Hungry Kitties" />
+                <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5133.PNG"} alt="The Hungry Kitties" />
+                <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5127.PNG"} alt="The Hungry Kitties" />
+                <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5123.PNG"} alt="The Hungry Kitties" />
             </ImgContainer>
             <Title>
-                Join the <br/> Hungry Kitties Club 
+                Describe your experience
             </Title>
             <ButtonContainer>
-                <Btn>
-                    Join us
-                </Btn>
+                <a href="https://4a89rkoz1ve.typeform.com/to/LfVpTa6X">
+                    <Btn>
+                        Describe
+                    </Btn>
+                </a>
+                <a href="https://4a89rkoz1ve.typeform.com/to/ubTZDERp">
+                    <Btn>
+                        Suggest your Shelter
+                    </Btn>
+                </a>
             </ButtonContainer>
         </Section>
     );

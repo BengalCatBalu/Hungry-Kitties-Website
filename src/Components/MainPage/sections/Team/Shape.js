@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import logo from './../../../../assets/ToolsAssets/tuz.png'
-import balu from './../../../../assets/Tomas.png'
 
 
 
@@ -39,7 +38,7 @@ const Title = styled.h2`
 `
 
 const SubText = styled.p`
-    font-size: 1vw;
+    font-size: 1.5vw;
     text-transform: none;
     color: black;
     align-self: flex-start;

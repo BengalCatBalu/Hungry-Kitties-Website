@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from '../../../Button';
 import Card from './Card';
-
-import balu from './../../../../assets/Tomas.png'
 import Shape from './Shape';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
@@ -104,39 +102,16 @@ function Team() {
                 Team
             </MainTitle>
             <Container>
-                <Swiper
-                    pagination={{
-                        type: "none",
-                    }}
-                    navigation={true}
-                    modules={[Pagination, Navigation]}
-                    className="mySwiper"
-                >
-                <SwiperSlide>
                     <RowContainer>
-                        <Card link= "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/balu.png" name="Balu" position="Bengal Cat" />
-                        <Card  link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/ikka.png" name = "Ikki" position = "Bengal Cat"/>
-                        <Card  link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/denchik.png" name = "Tyupa" position = "Black Cat"/>
+                        <Card link= "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/balu.png" name="Balu" position="Developer" />
+                        <Card  link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/ikka.png" name = "Ikki" position = "Boss and Artist"/>
+                        <Card  link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/denchik.png" name = "Tyupa" position = "Developer"/>
                     </RowContainer>
                     <RowContainer>
-                        <Card link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/tim.png" name = "Tim" position="Blue Point"/>
-                        <Card link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/yosya.png" name = "Yosya" position="Snowshoe"/>
-                        <Shape title={"Only Cats"} text = {"In fact, it is cats who manage this project, people do all the routine work."}/>
+                        <Card link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/tim.png" name = "Tim" position="Community Manager"/>
+                        <Card link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/yosya.png" name = "Yosya" position="Designer"/>
+                        <Shape title={"Only Cats"} text = {"In fact, it is cats who manage this project, people just feed us"}/>
                     </RowContainer>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <RowContainer>
-                        <Card/>
-                        <Card />
-                        <Card />
-                    </RowContainer>
-                    <RowContainer>
-                        <Card/>
-                        <Card />
-                        <Shape />
-                    </RowContainer>
-                </SwiperSlide>
-                </Swiper>
             </Container>
         </Section>
     );

@@ -162,16 +162,27 @@ function Footer() {
                                 Discord
                             </Btn>
                         </a>
+                        <a href="https://discord.gg/byERdrCCRf">
+                            <Btn>
+                                Medium
+                            </Btn>
+                        </a>
                     </IconsList>
                 </Left>
                 <MenuItems>
-                    <Item onClick={() => scrollTo("home")}>
-                        Home
+                    <Item>
+                        <a href = "/">
+                            Home
+                        </a>
                     </Item>
                     <Item onClick={() => scrollTo("whitepaper")}>Whitepaper</Item>
-                    <Item onClick={() => scrollTo("tools")}>Tools</Item>
+                    <Item onClick={() => scrollTo("tools")}>
+                        <a href = "/tools">
+                            Tools
+                        </a>
+                    </Item>
                     <Item> <a href='/roadmap'>Roadmap</a></Item>
-                    <Item>Contact</Item>
+                    <Item> <a href = "https://4a89rkoz1ve.typeform.com/to/iBZZFgIR">Partnerships</a></Item>
                     <Item><a href = "https://github.com/BengalCatBalu/Tools-Components">Github</a></Item>
                 </MenuItems>
             </Container>

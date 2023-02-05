@@ -71,7 +71,7 @@ const Title = styled.h2`
 
 const SubText = styled.p`
     font-size: 1.5vw;
-    text-transform: lowercase;
+    text-transform: none;
     color: ${props => props.theme.white};
     align-self: flex-start;
     width: 80%;

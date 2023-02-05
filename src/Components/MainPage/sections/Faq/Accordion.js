@@ -35,6 +35,7 @@ const Title = styled.div`
 const Reveal = styled.div`
     display:${props=>props.clicked ? 'block' : 'none'};
     margin-top: 1rem;
+    margin-bottom: 1rem;
     color: white;
     font-size: ${props => props.theme.fontlg};
     font-weight: 300;

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import logo from './../../../../assets/ToolsAssets/tuz.png'
-import balu from './../../../../assets/Tomas.png'
 import Typewriter from 'typewriter-effect'
 
 

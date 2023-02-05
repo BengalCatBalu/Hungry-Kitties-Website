@@ -17,6 +17,31 @@ const Box = styled.div`
     border-top-right-radius: 20px;
     white-space: nowrap;
 `
+const Btn = styled.button`
+    display: inline-block;
+    background-color: white;
+    color: ${props => props => props.theme.black};
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    font-size: ${props => props.theme.fontlg};
+    justify-items: center;
+    align-items: center;
+    padding: 0.9rem 2.5rem;
+    border-radius: 50px;
+    cursor:pointer;
+    position: relative;
+
+    transition: all 0.2s ease;
+
+
+    &:hover{
+        transform: scale(0.9);
+    }
+    @media (max-width: 64em) {
+        font-size: 2vw;
+    }
+`
 
 function NavBar() {
     return (

@@ -132,6 +132,7 @@ const SubText = styled.p`
     text-transform: none;
     color: ${props => props.theme.black};
     align-self: flex-start;
+    text-align: justify;
     width: 80%;
     margin: 1rem auto;
     font-weight: 400;
