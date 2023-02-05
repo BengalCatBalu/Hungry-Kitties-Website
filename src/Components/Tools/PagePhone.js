@@ -19,7 +19,7 @@ const Container = styled.div`
     overflow: visible;
     display: flex; // гибкий контейнер
     flex-direction: column-reverse;
-    gap: 5vw;
+    gap: 5vh;
     justify-content: center; //выравнивание по центру
     align-items: center; // выравнивание по вертикали по центру
 

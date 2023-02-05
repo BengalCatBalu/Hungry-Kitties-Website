@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import picture2 from './../../assets/ToolsAssets/tools.png'
+import picture2 from './../../assets/web31.PNG'
 import 'react-toastify/dist/ReactToastify.css';
 import Button from '../Button';
 import Typewriter from 'typewriter-effect'
@@ -27,7 +27,7 @@ const Container = styled.div`
 `
 
 const Box = styled.div`
-    width:80%;
+    width:100%;
     height:auto;
     display:flex;
     font-weight: 1000;
@@ -62,7 +62,9 @@ const VideoContainer = styled.div`
     width:100%;
 
     img{
-        width:100%;
+        justify-self: flex-start;
+        align-self: flex-start;
+        width:80%;
         height:auto;
     }
 `

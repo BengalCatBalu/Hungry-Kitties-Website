@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect'
 
 
 const Section = styled.section`
-min-height: 30vh;
+min-height: 25vh;
 width:100vw;
 margin-top: -1vh;
 position: relative;
@@ -20,7 +20,7 @@ img{
 function Phase34() {
     return (
         <Section>
-            <img src = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/Qmb4ncAdFHEzZuCFpFTJ3LJFB3m26EM2xote1Dg5mC8Ugz"/>
+            <img src = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmbS34Df4g5UVFVnHGxQWKTApM921rmTQhxGuMUTf3jJtX"/>
         </Section>
     );
 }

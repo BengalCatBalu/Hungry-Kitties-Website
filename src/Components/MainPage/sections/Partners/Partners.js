@@ -72,7 +72,7 @@ function Partners() {
             <Row>
                 <PartnerCard image={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmWQRN8ZKCCi1PcywxhjJW5tEtQShuciJme6T7YeCdpJru/IMG_5113.PNG"} text = "Ethos Wallet" link={"https://twitter.com/ethoswalletxyz?s=21&t=tBpyDIymP_JNa35htS5GXA"}/>
                 <PartnerCard image={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmWQRN8ZKCCi1PcywxhjJW5tEtQShuciJme6T7YeCdpJru/IMG_5115.PNG"} text = "Keepsake" link={"https://twitter.com/keepsakemarket?s=21&t=tBpyDIymP_JNa35htS5GXA"}/>
-                <PartnerCard/>
+                <PartnerCard image={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/Qme8CHcnScSqkEcJ6Er1buzNrpifJPridfK8a8YspmV1sX"} text = "Sui Global" link = "https://suiglobal.com/"/>
             </Row>
         </Section>
         </>
