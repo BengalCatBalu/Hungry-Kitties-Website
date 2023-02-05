@@ -123,15 +123,15 @@ function Paralax() {
                 <Box>
                     <img
                         alt="sky"
-                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmdxaBgJDDzZozWVih1zB1YdhX6uz1eFaT7eixoRPoaoSC"
+                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmX89EBUt1oz3ipdok4zCQevmUBDiGpewBnfVyzAkZQUJG"
                     />
                 </Box>
             </ParallaxLayer>
-            <ParallaxLayer offset={0.99} speed={1.5} style = {{marginTop: "30vh"}}>
+            <ParallaxLayer offset={0.99} speed={1.1}>
                 <Box>
                     <img
                         alt="sun"
-                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmfDtR2gBh5bPJf74rFUkCgJJZXv9iRuiMdbw6o8JStbhe"
+                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmWLgpbS4637GkybXLXP7V9Abc6fH34yQU8z4khn1Sfdiu"
                     />
                 </Box>
             </ParallaxLayer>
@@ -139,7 +139,7 @@ function Paralax() {
                 <Box>
                     <img
                         alt="right big pyramid"
-                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmUYxvMvXEuntqAKQeds9XbesnX1p2NJAwrZ4a4U3jeJMw/IMG_5313.PNG"
+                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmVc3eutDwdgsJr7wav8vKRpYfzXqsSwFbZep488cTApX5/img-5313.webp"
                     />
                 </Box>
             </ParallaxLayer>
@@ -147,7 +147,7 @@ function Paralax() {
                 <Box>
                     <img
                         alt="middle big pyramid"
-                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmUYxvMvXEuntqAKQeds9XbesnX1p2NJAwrZ4a4U3jeJMw/IMG_5314.PNG"
+                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmVc3eutDwdgsJr7wav8vKRpYfzXqsSwFbZep488cTApX5/img-5314.webp"
                     />
                 </Box>
             </ParallaxLayer>
@@ -155,7 +155,7 @@ function Paralax() {
                 <Box>
                     <img
                         alt="big sand"
-                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmUYxvMvXEuntqAKQeds9XbesnX1p2NJAwrZ4a4U3jeJMw/IMG_5316.PNG"
+                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmVc3eutDwdgsJr7wav8vKRpYfzXqsSwFbZep488cTApX5/img-5316.webp"
                     />
                 </Box>
             </ParallaxLayer>
@@ -163,7 +163,7 @@ function Paralax() {
                 <Box>
                     <img
                         alt="low sand"
-                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmUYxvMvXEuntqAKQeds9XbesnX1p2NJAwrZ4a4U3jeJMw/IMG_5317.PNG"
+                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmVc3eutDwdgsJr7wav8vKRpYfzXqsSwFbZep488cTApX5/img-5317.webp"
                     />
                 </Box>
             </ParallaxLayer>
@@ -171,7 +171,7 @@ function Paralax() {
                 <Box>
                     <img
                         alt="left"
-                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmUYxvMvXEuntqAKQeds9XbesnX1p2NJAwrZ4a4U3jeJMw/IMG_5325.PNG"
+                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmVc3eutDwdgsJr7wav8vKRpYfzXqsSwFbZep488cTApX5/img-5325.webp"
                     />
                 </Box>
             </ParallaxLayer>
@@ -179,7 +179,15 @@ function Paralax() {
                 <Box>
                     <img
                         alt="right"
-                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmUYxvMvXEuntqAKQeds9XbesnX1p2NJAwrZ4a4U3jeJMw/IMG_5326.PNG"
+                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmVc3eutDwdgsJr7wav8vKRpYfzXqsSwFbZep488cTApX5/img-5326.webp"
+                    />
+                </Box>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0.99} speed={1.1}>
+                <Box>
+                    <img
+                        alt="light"
+                        src="https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmVc3eutDwdgsJr7wav8vKRpYfzXqsSwFbZep488cTApX5/img-5320.webp"
                     />
                 </Box>
             </ParallaxLayer>
