@@ -1,10 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Button from '../../../Button';
-import WhitePaper from '../../../../Icons/Whitepaper';
 
-import logo from './../../../../assets/whitepaper.png'
+import logo from './../../../../assets/whitepaper.webp'
 
 const Section = styled.section`
     min-height: 100vh;
@@ -63,37 +60,6 @@ const Title = styled.h2`
     margin: 0 auto;
     @media (max-width: 64em) {
         font-size: 5vw;
-        align-self: center;
-        text-align: center;
-    }
-`
-
-const SubText = styled.p`
-    font-size: 1.5vw;
-    text-transform: lowercase;
-    color: ${props => props.theme.body};
-    align-self: flex-start;
-    width: 80%;
-    margin: 1rem auto;
-    font-weight: 400;
-    white-space: pre-line;
-    @media (max-width: 64em) {
-        font-size: 3vw;
-        align-self: center;
-        text-align: center;
-    }
-`
-
-const SubTextLight = styled.p`
-    font-size: 1.5vw;
-    text-transform: capitalize;
-    color: ${props => `rgba(${props.theme.bodyRgba}, 0.6)`};
-    align-self: flex-start;
-    width: 80%;
-    margin: 1rem auto;
-    font-weight: 400;
-    @media (max-width: 64em) {
-        font-size: 3vw;
         align-self: center;
         text-align: center;
     }

@@ -8,8 +8,6 @@ import Whitepaper from '../Icons/Whitepaper';
 import { useHistory, useLocation, useParams } from "react-router";
 import { useRef, useState } from 'react';
 
-import logo from './../assets/logo.png'
-
 
 
 const Section = styled.div`
@@ -164,7 +162,6 @@ function Footer() {
             <Banner />
             <Container>
                 <Left>
-                    <image src={logo} alt="logo" />
                     <IconsList>
                         <a href="https://twitter.com/hungrykitties?s=21&t=odV5PsLZW6-35sR9Tsb9Gg">
                             <Btn>

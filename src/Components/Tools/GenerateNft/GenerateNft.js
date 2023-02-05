@@ -3,25 +3,24 @@ import styled, { keyframes } from 'styled-components';
 import { useState, useEffect } from 'react'
 import 'react-toastify/dist/ReactToastify.css';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
-import pict from './../../../assets/ToolsAssets/dinoFree.png'
-import { RadioGroup, RadioButton, ReversedRadioButton } from 'react-radio-buttons';
+import { RadioGroup, RadioButton} from 'react-radio-buttons';
 import { useWallet } from "@suiet/wallet-kit";
 import { toast } from 'react-toastify';
-import color1 from './../../../assets/ToolsAssets/GenerateAssets/Color/1.PNG';
-import color2 from './../../../assets/ToolsAssets/GenerateAssets/Color/2.PNG';
-import color3 from './../../../assets/ToolsAssets/GenerateAssets/Color/3.PNG';
-import eye1 from './../../../assets/ToolsAssets/GenerateAssets/Eyes/1.PNG';
-import eye2 from './../../../assets/ToolsAssets/GenerateAssets/Eyes/2.PNG';
-import eye3 from './../../../assets/ToolsAssets/GenerateAssets/Eyes/3.PNG';
-import food1 from './../../../assets/ToolsAssets/GenerateAssets/Food/1.PNG';
-import food2 from './../../../assets/ToolsAssets/GenerateAssets/Food/2.PNG';
-import food3 from './../../../assets/ToolsAssets/GenerateAssets/Food/3.PNG';
-import hat1 from './../../../assets/ToolsAssets/GenerateAssets/Hats/1.PNG';
-import hat2 from './../../../assets/ToolsAssets/GenerateAssets/Hats/2.PNG';
-import hat3 from './../../../assets/ToolsAssets/GenerateAssets/Hats/3.PNG';
-import mouth1 from './../../../assets/ToolsAssets/GenerateAssets/Mouth/1.PNG';
-import mouth2 from './../../../assets/ToolsAssets/GenerateAssets/Mouth/2.PNG';
-import mouth3 from './../../../assets/ToolsAssets/GenerateAssets/Mouth/3.PNG';
+import color1 from './../../../assets/ToolsAssets/GenerateAssets/Color/1.webp';
+import color2 from './../../../assets/ToolsAssets/GenerateAssets/Color/2.webp';
+import color3 from './../../../assets/ToolsAssets/GenerateAssets/Color/3.webp';
+import eye1 from './../../../assets/ToolsAssets/GenerateAssets/Eyes/1.webp';
+import eye2 from './../../../assets/ToolsAssets/GenerateAssets/Eyes/2.webp';
+import eye3 from './../../../assets/ToolsAssets/GenerateAssets/Eyes/3.webp';
+import food1 from './../../../assets/ToolsAssets/GenerateAssets/Food/1.webp';
+import food2 from './../../../assets/ToolsAssets/GenerateAssets/Food/2.webp';
+import food3 from './../../../assets/ToolsAssets/GenerateAssets/Food/3.webp';
+import hat1 from './../../../assets/ToolsAssets/GenerateAssets/Hats/1.webp';
+import hat2 from './../../../assets/ToolsAssets/GenerateAssets/Hats/2.webp';
+import hat3 from './../../../assets/ToolsAssets/GenerateAssets/Hats/3.webp';
+import mouth1 from './../../../assets/ToolsAssets/GenerateAssets/Mouth/1.webp';
+import mouth2 from './../../../assets/ToolsAssets/GenerateAssets/Mouth/2.webp';
+import mouth3 from './../../../assets/ToolsAssets/GenerateAssets/Mouth/3.webp';
 import Button from '../../Button';
 
 

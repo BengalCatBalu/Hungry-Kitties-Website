@@ -1,16 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../../Button';
-import { useWallet } from "@suiet/wallet-kit";
-import { JsonRpcProvider, Network } from '@mysten/sui.js';
-import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 import Drawer from 'react-modern-drawer'
 import { toast } from 'react-toastify';
 import getObjectsOwnedByAddress from './ObjectsScript.tsx';
 
-import coinLogo from './../../../assets/ToolsAssets/coin.png'
-import nftLogo from './../../../assets/ToolsAssets/nftLogo.png'
-import objectLogo from './../../../assets/ToolsAssets/object.png'
+import coinLogo from './../../../assets/ToolsAssets/coin.webp'
+import nftLogo from './../../../assets/ToolsAssets/nftlogo.webp'
+import objectLogo from './../../../assets/ToolsAssets/object.webp'
 
 
 

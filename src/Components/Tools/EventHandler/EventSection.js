@@ -15,47 +15,6 @@ const Section = styled.div`
     align-items:center;
     position:relative;
 `
-const SectionMint = styled.div`
-    min-height: 100vh;
-    width:100%;
-    color: ${props => props.theme.body};
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-`
-
-const Container = styled.div`
-    width:90%;
-    min-height: 80vh;
-    margin: 0 auto; //
-    background-color: white;
-    border-radius: 50px;
-    display: flex; // гибкий контейнер
-    justify-content: center; //выравнивание по центру
-    align-items: center; // выравнивание по вертикали по центру
-
-`
-const NFTContainer = styled.div`
-    width:90%;
-    min-height: 80vh;
-    margin: 0 auto; //
-    border-radius: 50px;
-    display: flex; // гибкий контейнер
-    justify-content: center; //выравнивание по центру
-    align-items: center; // выравнивание по вертикали по центру
-
-`
-
-const Box = styled.div`
-    width:50%;
-    height:100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`
 
 function EventSection() {
     const wallet = useWallet();

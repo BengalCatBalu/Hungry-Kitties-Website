@@ -139,12 +139,12 @@ function Shelters() {
                     </SwiperSlide>
                     <SwiperSlide>
                         <ShelterPage title={"Heaven on Earth"} text={"The shelter was founded in 2000 in Los Angeles, which has a large number of assistance programs for cats and kittens.Heaven on Earth has come a long way in its 20 years as an organization, and the team continues to change and grow."} links={[
-                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/1.png",
-                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/2.png",
-                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/3.png",
-                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/4.png",
-                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/5.png",
-                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmW2NhzSWJxkVPLnfS3t66siemJNKGYNCbCguKrCLbjQhC/6.png",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSsBgyRAWVyj3x9qWCBh3cUNzPEEbUQ85zssHTCv6bFop/1.webp",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSsBgyRAWVyj3x9qWCBh3cUNzPEEbUQ85zssHTCv6bFop/2.webp",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSsBgyRAWVyj3x9qWCBh3cUNzPEEbUQ85zssHTCv6bFop/3.webp",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSsBgyRAWVyj3x9qWCBh3cUNzPEEbUQ85zssHTCv6bFop/4.webp",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSsBgyRAWVyj3x9qWCBh3cUNzPEEbUQ85zssHTCv6bFop/5.webp",
+                            "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSsBgyRAWVyj3x9qWCBh3cUNzPEEbUQ85zssHTCv6bFop/6.webp",
                         ]} toSite={"https://heavenlypets.org/"} />
                     </SwiperSlide>
                 </Swiper>

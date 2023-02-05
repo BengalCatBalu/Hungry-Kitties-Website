@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import TypeWriter from './TypeWriter';
-import picture1 from './../../../../assets/logo.png'
-import picture2 from './../../../../assets/ToolsAssets/nftText.png'
+import picture2 from './../../../../assets/ToolsAssets/nfttext.webp'
 
 const Section = styled.section`
 min-height: ${props => `calc(100vh - ${props.theme.navHeight}) - 5vh`};

@@ -1,12 +1,11 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Button from '../../Button';
-import picture2 from './../../../assets/ToolsAssets/tools.png'
+import picture2 from './../../../assets/ToolsAssets/tools.webp'
 import { useWallet } from "@suiet/wallet-kit";
 import { JsonRpcProvider, Network } from '@mysten/sui.js';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useState, useEffect } from "react";
+import {useEffect } from "react";
 
 
 const Section = styled.section`

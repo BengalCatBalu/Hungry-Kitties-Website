@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import picture from './../../../assets/ToolsAssets/img3.png'
+import picture from './../../../assets/ToolsAssets/img3.webp'
 import { useWallet } from "@suiet/wallet-kit";
 import { toast } from 'react-toastify';
 

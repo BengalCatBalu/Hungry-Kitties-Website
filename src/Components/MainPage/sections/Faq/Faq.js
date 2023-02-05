@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Accordion from './Accordion';
-import quest from './../../../../assets/questions.png'
+import quest from './../../../../assets/questions.webp'
 
 
 const Section = styled.div`

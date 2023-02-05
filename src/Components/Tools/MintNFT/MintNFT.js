@@ -1,8 +1,6 @@
 import React from 'react';
-import ToolsNavigation from '../ToolsNavigation';
-import { ToastContainer } from 'react-toastify';
 import styled from 'styled-components';
-import picture from './../../../assets/ToolsAssets/nftText.png'
+import picture from './../../../assets/ToolsAssets/nfttext.webp'
 import NftCard from './NftCard';
 
 

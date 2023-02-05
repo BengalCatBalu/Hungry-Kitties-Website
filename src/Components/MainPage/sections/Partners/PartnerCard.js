@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from './../../../../assets/ToolsAssets/tuz.png'
 
 
 const Item = styled.div`

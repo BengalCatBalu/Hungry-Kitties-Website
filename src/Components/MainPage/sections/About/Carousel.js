@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { EffectFlip, Pagination, Navigation, Autoplay } from "swiper";
-import logo from './../../../../assets/ToolsAssets/dinoFree.png'
-import tuz from './../../../../assets/ToolsAssets/img3.png'
+import logo from './../../../../assets/ToolsAssets/dinofree.webp'
+import tuz from './../../../../assets/ToolsAssets/img3.webp'
 
 
 
@@ -88,25 +87,25 @@ function Carousel() {
                     <img src={tuz} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5122.PNG"} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmWLVtPn9x15TJ5ouqzyBNNQhws2vBCnN26GXxc8wvNagd/img-5122.webp"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5123.PNG"} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmWLVtPn9x15TJ5ouqzyBNNQhws2vBCnN26GXxc8wvNagd/img-5123.webp"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5124.PNG"} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmWLVtPn9x15TJ5ouqzyBNNQhws2vBCnN26GXxc8wvNagd/img-5124.webp"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5125.PNG"} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmWLVtPn9x15TJ5ouqzyBNNQhws2vBCnN26GXxc8wvNagd/img-5125.webp"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5127.PNG"} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmWLVtPn9x15TJ5ouqzyBNNQhws2vBCnN26GXxc8wvNagd/img-5127.webp"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5128.PNG"} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmWLVtPn9x15TJ5ouqzyBNNQhws2vBCnN26GXxc8wvNagd/img-5128.webp"} alt="logo" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZo62z3uAuruWWXYCemjinoJBDbGp5PKNYeTAT9vw4yVY/IMG_5134.PNG"} alt="logo" />
+                    <img src={"https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmWLVtPn9x15TJ5ouqzyBNNQhws2vBCnN26GXxc8wvNagd/img-5134.webp"} alt="logo" />
                 </SwiperSlide>
             </Swiper>
         </Container>

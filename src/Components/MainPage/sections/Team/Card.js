@@ -1,8 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import logo from './../../../../assets/ToolsAssets/tuz.png'
-import Typewriter from 'typewriter-effect'
 
 
 
@@ -32,7 +29,7 @@ const Item = styled.div`
 `
 const ImageContainer = styled.div`
     width: 80%;
-    height: 35vh;
+    height: 100%;
     margin: 1vh 0vw;
     color: ${props => props.theme.body};
     border-radius: 40px;
@@ -57,6 +54,9 @@ const ImageContainer = styled.div`
         height: auto;
         border-radius: 20px;
         transition: all 0.5s ease;
+        @media (max-width: 64em) {
+        height: 100%;
+    }
     }
 
 `

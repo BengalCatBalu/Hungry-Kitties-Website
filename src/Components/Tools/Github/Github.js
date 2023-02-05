@@ -1,5 +1,5 @@
 import React from 'react';
-import picture from './../../../assets/ToolsAssets/programmer.png'
+import picture from './../../../assets/ToolsAssets/programmer.webp'
 
 
 import styled from 'styled-components';

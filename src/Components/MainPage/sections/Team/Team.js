@@ -103,13 +103,13 @@ function Team() {
             </MainTitle>
             <Container>
                     <RowContainer>
-                        <Card link= "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/balu.png" name="Balu" position="Developer" />
-                        <Card  link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/ikka.png" name = "Ikki" position = "Boss and Artist"/>
-                        <Card  link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/denchik.png" name = "Tyupa" position = "Developer"/>
+                        <Card link= "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmP3BvWG8B2nuJDjmvYkraZmVk5kkSr5zBUhk3ps3KNEer/balu.webp" name="Balu" position="Developer" />
+                        <Card  link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmP3BvWG8B2nuJDjmvYkraZmVk5kkSr5zBUhk3ps3KNEer/ikka.webp" name = "Ikki" position = "Boss and Artist"/>
+                        <Card  link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmP3BvWG8B2nuJDjmvYkraZmVk5kkSr5zBUhk3ps3KNEer/denchik.webp" name = "Tyupa" position = "Developer"/>
                     </RowContainer>
                     <RowContainer>
-                        <Card link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/tim.png" name = "Tim" position="Community Manager"/>
-                        <Card link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmTJmX1UtEXgwc7H7g6zmnwZpK8P1XzVZyw8cw3rCeagSp/yosya.png" name = "Yosya" position="Designer"/>
+                        <Card link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmP3BvWG8B2nuJDjmvYkraZmVk5kkSr5zBUhk3ps3KNEer/tim.webp" name = "Tim" position="Community Manager"/>
+                        <Card link = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmP3BvWG8B2nuJDjmvYkraZmVk5kkSr5zBUhk3ps3KNEer/yosya.webp" name = "Yosya" position="Designer"/>
                         <Shape title={"Only Cats"} text = {"In fact, it is cats who manage this project, people just feed us"}/>
                     </RowContainer>
             </Container>

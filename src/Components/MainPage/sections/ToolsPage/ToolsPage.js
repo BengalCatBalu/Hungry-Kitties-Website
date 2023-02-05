@@ -1,9 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Button from '../../../Button';
 
-import logo from './../../../../assets/ToolsAssets/tuz.png'
 import GifContainer from './GifContainer';
 
 const Section = styled.section`
@@ -86,20 +83,6 @@ const SubText = styled.p`
     }
 `
 
-const SubTextLight = styled.p`
-    font-size: 1.5vw;
-    text-transform: capitalize;
-    color: ${props => `rgba(${props.theme.bodyRgba}, 0.6)`};
-    align-self: flex-start;
-    width: 80%;
-    margin: 1rem auto;
-    font-weight: 400;
-    @media (max-width: 64em) {
-        font-size: 3vw;
-        align-self: center;
-        text-align: center;
-    }
-`
 
 const MainTitle = styled.h1`
     font-size: ${props => props.theme.fontxxl};

@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import picture from './../../../assets/ToolsAssets/dinoFree.png'
+import picture from './../../../assets/ToolsAssets/dinofree.webp'
 
 
 import styled from 'styled-components';

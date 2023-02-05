@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect'
-import Button from '../../../Button';
 
 
 const Title = styled.h2`
@@ -78,13 +77,7 @@ const SubTitle = styled.h3`
     }
 `
 
-const ButtonContainer = styled.div`
-    width:80%;
-    align-self:flex-start;
-    margin-top: 3vh;
-`
-
-function TypeWriter(props) {
+function TypeWriter() {
     return (
         <>
             <Title>

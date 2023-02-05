@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import picture2 from './../../assets/ToolsAssets/tools.png'
+import picture2 from './../../assets/ToolsAssets/tools.webp'
 import 'react-toastify/dist/ReactToastify.css';
 import Button from '../Button';
 

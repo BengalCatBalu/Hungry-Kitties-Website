@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'
-import logo from './../assets/ToolsAssets/tuz.png'
-import Button from './Button';
 
 const Section = styled.section`
     width:85vw;

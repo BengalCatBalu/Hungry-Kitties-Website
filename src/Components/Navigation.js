@@ -7,7 +7,7 @@ import { ConnectButton, useWallet } from '@suiet/wallet-kit';
 import { useHistory, useLocation, useParams } from "react-router";
 //import './../Styles/suiet-wallet-kit-custom.css'
 
-import logo from './../assets/logo.png'
+import logo from './../assets/logo.webp'
 import Button from './Button';
 import Home from './MainPage/sections/Home/Home';
 

@@ -1,7 +1,6 @@
 import React from 'react';
-import { useRef, useState } from "react";
-import logo from './../../../../assets/ToolsAssets/dinoFree.png'
-import styled, { keyframes } from 'styled-components';
+import { useRef } from "react";
+import styled from 'styled-components';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles

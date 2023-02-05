@@ -1,9 +1,6 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import picture2 from './../../assets/ToolsAssets/tools.png'
+import styled from 'styled-components';
 import 'react-toastify/dist/ReactToastify.css';
-import Button from '../Button';
-import Typewriter from 'typewriter-effect'
 
 
 const Section = styled.section`
