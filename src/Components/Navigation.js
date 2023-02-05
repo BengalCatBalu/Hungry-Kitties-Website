@@ -23,6 +23,8 @@ const Section = styled.section`
     @media (max-width: 64em) {
         /*1024px*/
        background-color: white;
+       height: 5vh;
+       width: 100vw;
     }
 `
 

@@ -1,15 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
+import Navigation from '../Navigation';
+import MainPhonePage from './MainPagePhone';
 import NavBar from './NavBar';
 import Paralax1 from './Parallax';
+import Phase12 from './Phase12';
+import Phase56 from './Phase56';
+import Phase34 from './Section34';
 
+const MainPhone = styled.div`
+    display: none;
+    @media (max-width: 64em) {
+        display: flex;
+        flex-direction: column;
+        gap: 0vh;
+    }
+`
+const BigSpace = styled.section`
+margin-top: -2vh;
+height: 30vh;
+width:100vw;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url("https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmYD5T74cbos7pXt5imrnnnDvZ3H8vwRgkUjvVcV5pivAT/IMG_5229.PNG");
+background-size: 100%;
+`
 
 const Section = styled.section`
 min-height: 100vh;
 width:100vw;
 
 position: relative;
-background-color:${props => props.theme.body};
+background-color: #C4F1F9;
+@media (max-width: 64em) {
+        display: none;
+
+    }
 `
 const Section1 = styled.section`
 min-height: 100vh;
@@ -18,7 +46,12 @@ position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
-background-color:black;
+background-image: url("https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmYD5T74cbos7pXt5imrnnnDvZ3H8vwRgkUjvVcV5pivAT/IMG_5229.PNG");
+background-size: 100%;
+@media (max-width: 64em) {
+        display: none;
+
+}
 `
 const Container = styled.div`
     width:85%;
@@ -62,12 +95,12 @@ const Box = styled.div`
 `
 const Btn = styled.button`
     display: inline-block;
-    background-color: white;
-    color: ${props => props => props.theme.black};
+    background-color: ${props=>props.theme.orange};
+    color: ${props => props => props.theme.white};
     outline: none;
     border: none;
     white-space: nowrap;
-    font-size: ${props => props.theme.fontxxl};
+    font-size: ${props => props.theme.fontxl};
     justify-items: center;
     align-items: center;
     padding: 0.9rem 2.5rem;
@@ -96,10 +129,23 @@ function Roadmap() {
             <Section1>
                 <a href="/">
                     <Btn>
-                        To Home
+                        To Home Page
                     </Btn>
                 </a>
             </Section1>
+            <MainPhone>
+                <MainPhonePage />
+                <Phase12 />
+                <Phase34/>
+                <Phase56/>
+                <BigSpace>
+                <a href="/">
+                    <Btn>
+                        To Home Page
+                    </Btn>
+                </a>
+                </BigSpace>
+            </MainPhone>
         </>
     );
 }

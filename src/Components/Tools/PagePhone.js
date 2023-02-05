@@ -2,19 +2,19 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import picture2 from './../../assets/ToolsAssets/tools.png'
 import 'react-toastify/dist/ReactToastify.css';
+import Button from '../Button';
 
 
 const Section = styled.section`
 min-height: ${props => `calc(100vh - ${props.theme.navHeight} - 5vh)`};
 width:100vw;
-margin-top: 5vh;
+margin-top: 10vh;
 position: relative;
 background-color:${props => props.theme.body};
 `
 const Container = styled.div`
-    width:100%;
-    min-height: 80vh;
-    margin: 0vw auto; //
+    width:100vw;
+    max-height: 90vh;
     background-color: White;
     overflow: visible;
     display: flex; // гибкий контейнер
@@ -113,8 +113,10 @@ const Btn = styled.button`
 
 function PhonePage() {
     return (
-        <Section id = "tools-mainpage" >
             <Container>
+                <Box>
+                    <Button text = "Go Home" link={"/"}/>
+                </Box>
                 <Box1>
                     <Title>
                         Our Tools Work Only in Desktop-version
@@ -126,7 +128,6 @@ function PhonePage() {
                     </VideoContainer>
                 </Box>
             </Container>
-        </Section>
     );
 }
 

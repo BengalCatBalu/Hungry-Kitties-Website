@@ -12,6 +12,9 @@ margin-top: 5vh;
 
 position: relative;
 background-color:${props => props.theme.body};
+@media (max-width: 64em) {
+        height: 100vh;
+    }
 `
 const Container = styled.div`
     width:85%;

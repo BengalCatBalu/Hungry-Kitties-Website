@@ -25,6 +25,8 @@ const MainPhone = styled.div`
     display: none;
     @media (max-width: 64em) {
         display: flex;
+        justify-content: center;
+        height: 100vh;
     }
 `
 
