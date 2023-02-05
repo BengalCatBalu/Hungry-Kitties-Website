@@ -95,7 +95,7 @@ const Box = styled.div`
 `
 const Btn = styled.button`
     display: inline-block;
-    background-color: ${props=>props.theme.orange};
+    background-color: ${props => props.theme.orange};
     color: ${props => props => props.theme.white};
     outline: none;
     border: none;
@@ -129,24 +129,24 @@ function Roadmap() {
                 <NavBar />
                 <Paralax1 />
             </Section>
-            <Section1>
+            {/*<Section1>
                 <a href="/">
                     <Btn>
                         To Home Page
                     </Btn>
                 </a>
-            </Section1>
+    </Section1>*/}
             <MainPhone>
                 <MainPhonePage />
                 <Phase12 />
-                <Phase34/>
-                <Phase56/>
+                <Phase34 />
+                <Phase56 />
                 <BigSpace>
-                <a href="/">
-                    <Btn>
-                        To Home Page
-                    </Btn>
-                </a>
+                    <a href="/">
+                        <Btn>
+                            To Home Page
+                        </Btn>
+                    </a>
                 </BigSpace>
             </MainPhone>
         </>
