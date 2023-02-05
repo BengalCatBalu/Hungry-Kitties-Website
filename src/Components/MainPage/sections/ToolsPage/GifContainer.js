@@ -12,9 +12,15 @@ const GifContaineer = styled.div`
         width:100%;
         height:auto;
         border-radius: 50px;
+        @media (max-width: 64em) {
+        margin-left: 0vw;
+        border-radius: 0px;
+    }
     }
     @media (max-width: 64em) {
-        height: 40vh;
+        margin-left: 0vw;
+        border-radius: 0px;
+        height: 50vh;
         display: flex;
         align-items: center;
     }

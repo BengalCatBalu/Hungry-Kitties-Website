@@ -116,6 +116,9 @@ const Btn = styled.button`
     }
     @media (max-width: 64em) {
         font-size: 2vw;
+        :hover{
+            transform: none;
+        }
     }
 `
 

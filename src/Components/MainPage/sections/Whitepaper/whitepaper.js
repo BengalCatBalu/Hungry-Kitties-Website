@@ -146,6 +146,9 @@ const Btn = styled.button`
         font-size: 3vw;
         align-self: center;
         text-align: center;
+        :hover{
+            transform: none;
+        }
     }
 `
 function Whitepaper() {
