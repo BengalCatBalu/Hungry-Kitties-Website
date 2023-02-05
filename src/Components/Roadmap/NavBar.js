@@ -5,6 +5,7 @@ const Section = styled.section`
 min-height: 2vh;
 width:100vw;
 background-color: #C4F1F9;
+opacity: 0;
 font-size: 2vw;
 font-weight: 1000;
 position: relative;

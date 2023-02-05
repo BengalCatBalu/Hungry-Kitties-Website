@@ -32,6 +32,7 @@ const Container = styled.div`
     align-items: center;
     border-bottom: 1px solid ${props => props.theme.text};
     @media (max-width: 64em) {
+        flex-direction: column;
         gap:5vw;
     }
 `
@@ -49,6 +50,11 @@ const IconsList = styled.div`
     align-items: center;
     gap: 2vw;
     margin: 1rem auto;
+    @media (max-width: 64em) {
+        gap:5vw;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 const MenuItems = styled.ul`
@@ -59,6 +65,11 @@ const MenuItems = styled.ul`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem;
+    @media (max-width: 64em) {
+        justify-content: center;
+        grid-column-gap: 30vw;
+        margin-bottom: 5vh;
+    }
 `
 
 const Item = styled.li`
