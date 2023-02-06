@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import logo from './../../../../assets/tools.webm'
+import logo1 from './../../../../assets/tools.png'
 
 const GifContaineer = styled.div`
     width:100%;
@@ -14,21 +15,29 @@ const GifContaineer = styled.div`
         @media (max-width: 64em) {
             width: 100%;
             margin-left: 0;
+            display: none;
+        }
+    }
+    img{
+        display: none;
+        @media (max-width: 64em) {
+            display: flex;
+            width: 100%;
+            margin-left: 0;
         }
     }
     @media (max-width: 64em) {
-        height: 40vh;
-        width: 100%;
         display: flex;
-        align-items: center;
+        margin-bottom: 10vh;
     }
 `
 
 function GifContainer() {
     return (
-        <GifContaineer>
-            <video src = {logo} autoPlay muted loop/>
-        </GifContaineer>
+            <GifContaineer>
+                <video src={logo} autoPlay muted loop />
+                <img src = {logo1}/>
+            </GifContaineer>
     );
 }
 

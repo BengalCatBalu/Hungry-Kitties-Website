@@ -19,8 +19,8 @@ const Item = styled.div`
     justify-content: center;
     transition: all 0.5s ease;
     @media (max-width: 64em) {
-        width: 50vw;
-        height: 40vh;
+        width: 40vw;
+        height: 30vh;
         margin: 0;
     }
     :hover{
@@ -37,8 +37,8 @@ const ImageContainer = styled.div`
     transition: all 0.5s ease;
     overflow: hidden;
     @media (max-width: 64em) {
-        width: 50vw;
-        height: 30vh;
+        width: 100%;
+        height: 20vh;
         margin: 0;
         border: 0px solid #DD6B20;
     }
@@ -55,7 +55,9 @@ const ImageContainer = styled.div`
         border-radius: 20px;
         transition: all 0.5s ease;
         @media (max-width: 64em) {
-        height: 100%;
+            width: 100%;
+            height: auto;
+            align-self: center;
     }
     }
 
