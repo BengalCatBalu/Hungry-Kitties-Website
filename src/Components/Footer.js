@@ -202,7 +202,7 @@ function Footer() {
                     &copy; 2023 Hungry Kitties. All rights reserved.
                 </span>
                 <span>
-                    hungrykitties@gmail.com
+                    hungrykittties@gmail.com
                 </span>
             </Bottom>
         </Section>
