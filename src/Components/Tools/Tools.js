@@ -11,6 +11,7 @@ import PhonePage from './PagePhone';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import EventSection from './EventHandler/EventSection';
+import { ToastContainer } from 'react-toastify';
 
 const Main = styled.div`
     @media (max-width: 64em) {
@@ -31,7 +32,8 @@ function Tools() {
     return (
         <>
             <Main name='tools'>
-                <Navigation/>
+                <ToastContainer autoClose={1000} />
+                <Navigation />
                 <ToolsHome />
                 <MintNFT />
                 <PaySuiText />
@@ -40,10 +42,10 @@ function Tools() {
                 <GenerateNft />
                 {/*<EventSection/>*/}
                 <Github />
-                <Footer/>
+                <Footer />
             </Main>
             <MainPhone>
-                <PhonePage/>
+                <PhonePage />
             </MainPhone>
         </>
     );
