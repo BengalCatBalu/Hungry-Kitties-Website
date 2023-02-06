@@ -141,13 +141,14 @@ function Roadmap() {
                 <Phase12 />
                 <Phase34 />
                 <Phase56 />
+                {/*
                 <BigSpace>
                     <a href="/">
                         <Btn>
                             To Home Page
                         </Btn>
                     </a>
-                </BigSpace>
+</BigSpace>*/}
             </MainPhone>
         </>
     );
