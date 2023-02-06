@@ -17,7 +17,7 @@ img{
 function Phase56() {
     return (
         <Section>
-            <img src = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/Qmb4ncAdFHEzZuCFpFTJ3LJFB3m26EM2xote1Dg5mC8Ugz"/>
+            <img src = "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmZdZvGJ6aUCKZUje55JXSDcGsLWXw4XYK8kz3LRKJWu1P/img-5370.webp"/>
         </Section>
     );
 }

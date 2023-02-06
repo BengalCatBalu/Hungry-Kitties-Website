@@ -1,26 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import logo from './../../../../assets/tools.png'
+import logo from './../../../../assets/tools.webm'
 
 const GifContaineer = styled.div`
     width:100%;
     border-radius: 50px;
 
-    img{
+    video{
         margin-left: 5vw;
-        width:100%;
-        height:auto;
-        border-radius: 50px;
+        width:90%;
+        height:70vh;
         @media (max-width: 64em) {
-        margin-left: 0vw;
-        border-radius: 0px;
-    }
+            width: 100%;
+            margin-left: 0;
+        }
     }
     @media (max-width: 64em) {
-        margin-left: 0vw;
-        border-radius: 0px;
-        height: 50vh;
+        height: 40vh;
+        width: 100%;
         display: flex;
         align-items: center;
     }
@@ -29,7 +27,7 @@ const GifContaineer = styled.div`
 function GifContainer() {
     return (
         <GifContaineer>
-            <img src = {logo}/>
+            <video src = {logo} autoPlay muted loop/>
         </GifContaineer>
     );
 }

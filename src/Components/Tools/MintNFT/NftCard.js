@@ -107,6 +107,9 @@ function NftCard({ name, text, link }) {
     const notifyError = (message) => toast.error(message, {
         position: toast.POSITION.BOTTOM_CENTER
     });
+    const notifyWarning = (message) => toast.warning(message, {
+        position: toast.POSITION.BOTTOM_CENTER
+    });
 
     async function handleExecuteMintNft() {
         try {
@@ -134,7 +137,7 @@ function NftCard({ name, text, link }) {
         } catch (e) {
             console.log(e);
             return (
-                notifyError("Something went wrong")
+                notifyWarning("An error occurred during the execution of the transaction, check the correct execution manually")
             )
         }
     }

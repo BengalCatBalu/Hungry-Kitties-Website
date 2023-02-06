@@ -26,11 +26,15 @@ function EventSection() {
         position: toast.POSITION.BOTTOM_CENTER
     });
 
+    async function SuiEventEnvelope(){
+        alert("event");
+    }
     async function getEv() {
-        const subscriptionId = await provider.subscribeEvent(
+        const subscriptionId = await await provider.subscribeEvent(
             { SenderAddress: wallet.address },
-            (e) => {
-              alert("Subscribed");
+            () => {
+                alert("subscribed");
+              // handle subscription notification message here. This function is called once per subscription message.
             }
           );
     }

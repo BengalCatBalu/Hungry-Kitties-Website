@@ -240,6 +240,10 @@ function GenerateNft() {
     const notifyError = (message) => toast.error(message, {
         position: toast.POSITION.BOTTOM_CENTER
     });
+    const notifyWarning = (message) => toast.warning(message, {
+        position: toast.POSITION.BOTTOM_CENTER
+    });
+    
     const [path, setPath] = React.useState(pathfile + color + eyes + food + hats + mouth + ".png")
     useEffect(() => {
         setPath(pathfile + color + eyes + food + hats + mouth + ".png")
@@ -271,7 +275,7 @@ function GenerateNft() {
         } catch (e) {
             console.log(e)
             return (
-                notifyError("Something went wrong")
+                notifyWarning("An error occurred during the execution of the transaction, check the correct execution manually")
             )
         }
     }

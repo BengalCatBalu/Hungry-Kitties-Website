@@ -28,8 +28,8 @@ const Container = styled.div`
     align-items: center; // выравнивание по вертикали по центру
     border-radius: 40px;
     @media (max-width: 64em) {
-        width: 100%;
         flex-direction: column;
+        width: 100%;
         align-items: center;
     }
 
