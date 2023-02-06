@@ -149,7 +149,7 @@ function ToolsPage() {
                     This page will allow you to take a closer look at the SUI blockchain.
                     </SubText>
                     <Btn>
-                        <a href = "">
+                        <a href = "/tools">
                             Our Tools
                         </a>
                     </Btn>

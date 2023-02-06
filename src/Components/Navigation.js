@@ -256,7 +256,7 @@ const Navigation = () => {
                         <BigMenuItem1><a href='/roadmap'><Btn>
                             Roadmap
                         </Btn></a></BigMenuItem1>
-                        <BigMenuItem1><a href='/roadmap'><Btn>
+                        <BigMenuItem1><a href='https://hungry-kitties-team.gitbook.io/whitepaper/'><Btn>
                             Whitepaper
                         </Btn></a></BigMenuItem1>
                         <BigMenuItem1><a href='/tools' ref={ref1} className="btn" onPointerEnter={() => {

@@ -119,7 +119,7 @@ const Btn = styled.button`
 `
 function Whitepaper() {
     return (
-        <Section id = "whitepaper">
+        <Section id="whitepaper">
             <MainTitle>
                 Whitepaper
             </MainTitle>
@@ -131,11 +131,11 @@ function Whitepaper() {
                     <Title>
                         You can read our Whitepaper
                     </Title>
-                    <Btn>
-                        <a href = "">
+                        <Btn>
+                            <a href="https://hungry-kitties-team.gitbook.io/whitepaper/">
                             Go to Whitepaper
-                        </a>
-                    </Btn>
+                            </a>
+                        </Btn>
                 </Box>
             </Container>
         </Section>

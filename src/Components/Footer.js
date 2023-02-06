@@ -186,7 +186,7 @@ function Footer() {
                             Home
                         </a>
                     </Item>
-                    <Item onClick={() => scrollTo("whitepaper")}>Whitepaper</Item>
+                    <Item onClick={() => scrollTo("whitepaper")}> <a href = "https://hungry-kitties-team.gitbook.io/whitepaper/">Whitepaper</a></Item>
                     <Item onClick={() => scrollTo("tools")}>
                         <a href = "/tools">
                             Tools
