@@ -151,8 +151,8 @@ function About() {
                         Hungry Kitties
                     </Title>
                     <SubText>
-                        We want to help animals and make the world kinder for this we make the process of donating funds as convenient as possible, and most importantly, an emotionally memorable event.
-                        We decided to make our first NFT charity collection on Sui. {'\n\n'}We will distribute 70 percent of the income from the mint to shelters and animal welfare funds. By purchasing our NFT, a person will automatically donate money to shelters with which we cooperate.{'\n\n'}At the time of the website's release, there are only 2 shelters, but by the time the NFT is minted, it will be at least 10 shelters.We hope that by implementing this project we will help thousands of animals around the world, because Hungry Kitties is just the beginning of our Hungry Pets universe.
+                        We want to help animals and make the world kinder. For this cause, we make the process of donating funds as convenient as possible, and most importantly, an emotionally memorable event.
+                        We decided to make our first NFT charity collection on Sui. {'\n\n'}We will distribute 70 percent of the income from the mint to shelters and animal welfare funds. By purchasing our NFT, a person will automatically donate money to shelters with which we cooperate.{'\n\n'}At the time of the website's release, there are only 2 shelters, but by the time the NFT is minted, it will be at least 10 shelters. We hope that by implementing this project we will help thousands of animals around the world, because Hungry Kitties is just the beginning of our Hungry Pets universe.
                     </SubText>
                     <SubTextLight>
                     </SubTextLight>
