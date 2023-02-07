@@ -125,7 +125,7 @@ function Shelters() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <ShelterPage title={"Edinburgh Dog and Cat Home"} text={"This is a small but very good shelter from Scotland, founded in 1884. For 140 years, this shelter has been helping many cats and dogs.«Here at Edinburgh Dog and Cat Home, we strive to make sure that every pet has the loving home it deserves. And we get our claws into our cause.»"} links={[
+                        <ShelterPage title={"Edinburgh Dog and Cat Home"} text={"This is a small but very good shelter from Scotland, founded in 1884. For 140 years, this shelter has been helping many cats and dogs. «Here at Edinburgh Dog and Cat Home, we strive to make sure that every pet has the loving home it deserves. And we get our claws into our cause.»"} links={[
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/7.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/2.png",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSNj1WocW4cuVhuk2Vko4be35xiwVajVTHEpYtJWfSpqL/3.png",
@@ -138,7 +138,7 @@ function Shelters() {
                         ]} toSite={"https://edch.org.uk/"} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <ShelterPage title={"Heaven on Earth"} text={"The shelter was founded in 2000 in Los Angeles, which has a large number of assistance programs for cats and kittens.Heaven on Earth has come a long way in its 20 years as an organization, and the team continues to change and grow."} links={[
+                        <ShelterPage title={"Heaven on Earth"} text={"The shelter was founded in 2000 in Los Angeles, which has a large number of assistance programs for cats and kittens. Heaven on Earth has come a long way in its 20 years as an organization, and the team continues to change and grow."} links={[
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSsBgyRAWVyj3x9qWCBh3cUNzPEEbUQ85zssHTCv6bFop/1.webp",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSsBgyRAWVyj3x9qWCBh3cUNzPEEbUQ85zssHTCv6bFop/2.webp",
                             "https://harlequin-written-whippet-307.mypinata.cloud/ipfs/QmSsBgyRAWVyj3x9qWCBh3cUNzPEEbUQ85zssHTCv6bFop/3.webp",
