@@ -173,7 +173,7 @@ function Footer() {
                                 Discord
                             </Btn>
                         </a>
-                        <a href="https://medium.com/@hungrykittties">
+                        <a href="https://medium.com/@HungryKitties">
                             <Btn>
                                 Medium
                             </Btn>
