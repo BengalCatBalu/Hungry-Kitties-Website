@@ -131,7 +131,7 @@ const Btn = styled.button`
     @media (max-width: 64em) {
         /*1024px*/
         font-size: 4vw;
-        background-color: ${props=>props.theme.orange};
+        background-color: ${props => props.theme.orange};
     }
     
 `
@@ -281,10 +281,14 @@ const Navigation = () => {
                                 <MenuItem1 onClick={() => scrollTo("GenerateNFT")}> Generate NFT</MenuItem1>
                                 <MenuItem1 onClick={() => scrollTo("tools-github")}> Check our Github</MenuItem1>
                             </ControlledMenu></BigMenuItem1>
+                        <BigMenuItem1>
+                            <a href='/check' className="btn">
+                                <Btn>
+                                    Check Your Whitelist
+                                </Btn>
+                            </a>
+                        </BigMenuItem1>
                     </Menu1>
-                    <BtnContainer>
-                        <ConnectButton />
-                    </BtnContainer>
                 </NavBar>
             </Section>
         </>
