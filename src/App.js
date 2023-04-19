@@ -9,6 +9,7 @@ import './App.css'
 import './reloader.js'
 import Preloader from "./Icons/Preloader";
 import Typewriter from 'typewriter-effect'
+import CheckWhitelist from "./Components/CheckWhitelist/CheckWaitlist";
 
 
 const ButCont = styled.div`
@@ -49,6 +50,7 @@ function App() {
           <Route path='/' element={<MainPage />} />
           <Route path='/tools' element={<Tools />} />
           <Route path='/Roadmap' element={<Roadmap />} />
+          <Route path='/check' element={<CheckWhitelist/>} />
         </Routes>
       </ThemeProvider>
     </>
