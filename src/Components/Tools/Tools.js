@@ -12,7 +12,6 @@ import Navigation from '../Navigation';
 import Footer from '../Footer';
 import EventSection from './EventHandler/EventSection';
 import { ToastContainer } from 'react-toastify';
-import Mainnet from './MainnetAlert/MainnetAlert';
 
 const Main = styled.div`
     @media (max-width: 64em) {
@@ -35,7 +34,6 @@ function Tools() {
             <Main name='tools'>
                 <ToastContainer autoClose={1000} />
                 <Navigation />
-                <Mainnet/>
                 <ToolsHome />
                 <MintNFT />
                 <PaySuiText />
