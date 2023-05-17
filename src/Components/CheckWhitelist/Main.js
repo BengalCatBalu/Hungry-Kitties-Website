@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import 'react-toastify/dist/ReactToastify.css';
 import picture from '../../assets/pict1.webp'
-import validWallets from './ValidWallets'
+import {validWLWallets, validOGWallets} from './ValidWallets'
 
 const Section = styled.section`
 min-height: ${props => `calc(100vh - ${props.theme.navHeight} - 5vh)`};
@@ -154,12 +154,18 @@ export const StatusText = styled.p`
 
 function Main() {
     const [wallet, setWallet] = useState('');
-    const [isValid, setIsValid] = useState(null);
+    const [isValid, setIsValid] = useState(-1);
 
     const handleChange = (e) => {
         const value = e.target.value;
         setWallet(value);
-        setIsValid(validWallets.includes(value));
+        if (validOGWallets.includes(value)) {
+            setIsValid(2);
+        } else if (validWLWallets.includes(value)) {
+            setIsValid(1);
+        } else {
+            setIsValid(0);
+        }
     };
     return (
         <Section id="tools-mainpage" >
@@ -183,13 +189,13 @@ function Main() {
                     />
                     {isValid !== null && (
                         <StatusText isValid={isValid}>
-                            {isValid ? 'You are whitelisted!' : 'You are not whitelisted'}
+                            {isValid == 2 ? 'You are OG' : isValid == 1 ? 'You are not whitelisted' : "You are eligible to public mint"}
                         </StatusText>
                     )}
                     <ButtonContainer>
-                        <a href="https://zealy.io/c/hungrykitties/invite/gCoot3-mNyUOSBilhSE8u">
+                        <a href="https://sui.bluemove.net/launchpad-detail/hungry-kitties">
                             <Btn>
-                                Win WL or OG in our CREW3
+                                Check out launch on BlueMove
                             </Btn>
                         </a>
                     </ButtonContainer>
